@@ -534,5 +534,6 @@ footer#footer ul li {
   bottom: 100px;
   -webkit-filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
