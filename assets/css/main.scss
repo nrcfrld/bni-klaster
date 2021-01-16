@@ -3,6 +3,8 @@ $primary-dark-color: #e4521c;
 $second-primary-color: #005e6a;
 $dark-color: #353535;
 
+// @import './klaster.scss';
+
 @mixin medium {
   @media (min-width: 992px) {
     @content;

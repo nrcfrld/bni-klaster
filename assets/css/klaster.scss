@@ -1,0 +1,39 @@
+$primary-color: #F15A23;
+$primary-dark-color: #E4521C;
+$second-primary-color: #005E6A;
+$dark-color: #353535;
+
+#klaster-header{
+    height: 221px;
+    background-color: $second-primary-color;
+    margin-top: 25px;
+    color: #fff;
+    
+    .eclipse {
+        float: right;
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+    .klaster-box {
+        padding-top: 64px;
+    }
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .desc {
+        line-height: 0.5;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+}
+
+
+#klaster-map {
+    
+    .map {
+        height: 475px;
+    }
+}
