@@ -1,119 +1,137 @@
-$primary-color: #F15A23;
-$primary-dark-color: #E4521C;
-$second-primary-color: #005E6A;
+$primary-color: #f15a23;
+$primary-dark-color: #e4521c;
+$second-primary-color: #005e6a;
 $dark-color: #353535;
 
-@mixin medium{
-  @media (min-width: 992px){
+@mixin medium {
+  @media (min-width: 992px) {
     @content;
   }
 }
 
-@mixin large{
-  @media (min-width: 1200px){
+@mixin large {
+  @media (min-width: 1200px) {
     @content;
   }
 }
 
-.btn{
-  &.btn-primary, &.btn-primary:active{
+.btn {
+  &.btn-primary,
+  &.btn-primary:active {
     background-color: $primary-color !important;
     border-color: $primary-color !important;
     border-radius: 10px;
 
-    &:focus{
+    &:focus {
       box-shadow: 0 0 0 0.2rem rgba(241, 90, 35, 0.4);
     }
 
-    &:hover{
+    &:hover {
       background-color: $primary-dark-color !important;
     }
   }
 }
 
-html, body{
-  font-family: 'Montserrat', sans-serif;
+html,
+body {
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: $dark-color;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
-.text-second-primary-color{
+.text-second-primary-color {
   color: $second-primary-color !important;
 }
 
-.text-primary{
+.text-primary {
   color: $primary-color !important;
 }
 
-.bg-primary-color{
+.bg-primary-color {
   background-color: $primary-color;
 }
 
-.bg-primary-dark-color-hover:hover{
+.bg-primary-dark-color-hover:hover {
   background-color: $primary-dark-color;
 }
 
-.font-weight-semibold{
+.font-weight-semibold {
   font-weight: 600;
 }
 
-.h-24px{
+.h-24px {
   height: 24px;
 }
 
 // Navbar
-.navbar-nav{
-  .nav-item{
+.navbar-nav {
+  .nav-item {
     font-weight: 600;
     color: $second-primary-color;
 
-    @include medium{
+    @include medium {
       margin-left: 48px;
-    } 
+    }
 
-    &.active{
+    &.active {
       border-bottom: 3px solid $primary-color;
     }
 
-    &.dropdown .dropdown-menu{
+    &.dropdown .dropdown-menu {
       border-top-left-radius: 10px;
       border-bottom-left-radius: 30px;
+      border-top-right-radius: 0;
+      z-index: 9;
+      border: none;
 
-      .dropdown-item:nth-child(1){
-        border-top-left-radius: 10px;
+      @include medium {
+        top: 60px;
       }
 
-      .dropdown-item:last-child{
+      .dropdown-item:focus {
+        background-color: inherit;
+      }
+
+      .dropdown-item:nth-child(1) {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+      }
+
+      .dropdown-item:last-child {
         border-bottom-left-radius: 30px;
       }
 
-      &::after{
+      &::after {
         position: absolute;
-        top: 32px;
-        @include medium{
-          top: -12px
+        z-index: -1;
+        top: 30px;
+        @include medium {
+          top: -16px;
+          border-right: 16px solid transparent;
+          border-bottom: 16px solid $primary-color;
+          border-left: 16px solid transparent;
         }
         right: 0;
         display: inline-block;
         border-right: 12px solid transparent;
         border-bottom: 12px solid $primary-color;
         border-left: 12px solid transparent;
-        content: '';
+        content: "";
       }
     }
   }
 
-  .dropdown-item{
+  .dropdown-item {
     font-weight: 600;
   }
 }
 
 // Hero Section
-#hero{
+#hero {
   height: 618px;
 
-  @include large{
+  @include large {
     height: 700px;
   }
 
@@ -122,24 +140,24 @@ html, body{
     height: 0px;
   }
 
-  .owl-container-dots{
+  .owl-container-dots {
     position: relative;
     top: -160px;
     z-index: 3;
     background: yellow;
-    .owl-container-dots-button{
+    .owl-container-dots-button {
       position: absolute;
       top: 0;
       text-align: left;
-  
-      button{
+
+      button {
         padding: 6px;
         border-radius: 50%;
         border: none;
         outline: none;
         margin-left: 12px;
-  
-        &.active{
+
+        &.active {
           background: $primary-color;
         }
       }
@@ -151,7 +169,6 @@ html, body{
     background: #5110e9;
   }
 
-
   .owl-carousel .item {
     text-align: center;
   }
@@ -161,9 +178,7 @@ html, body{
     position: absolute;
     top: calc(50% - 100px);
 
-    
-
-    @include large{
+    @include large {
       top: calc(50% - 50px);
     }
     background: transparent;
@@ -178,7 +193,7 @@ html, body{
   .owl-carousel .owl-prev {
     display: none;
     left: 20px;
-    @include medium{
+    @include medium {
       display: inline-block;
     }
   }
@@ -187,21 +202,21 @@ html, body{
     right: 20px;
   }
 
-  .owl-carousel-item{
+  .owl-carousel-item {
     position: relative;
     z-index: 1;
     width: 100%;
     height: 618px;
 
-    @include large{
+    @include large {
       height: 700px;
     }
 
-    .caption{
+    .caption {
       position: absolute;
       z-index: 3;
       top: 0;
-      color: #FFF;
+      color: #fff;
       font-weight: 600;
       display: block;
       width: 100%;
@@ -209,35 +224,39 @@ html, body{
       display: flex;
       align-items: center;
 
-      h3{
+      h3 {
         font-size: 48px;
       }
 
-      p{
-        font-size:14px;
+      p {
+        font-size: 14px;
         margin-top: 36px;
         margin-bottom: 24px;
         line-height: 24px;
-        @include medium{
+        @include medium {
           max-width: 618px;
         }
       }
     }
 
-    &::after{
+    &::after {
       position: absolute;
       display: block;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      content: '';
-      background: linear-gradient(272.1deg, #000000 -21.24%, rgba(196, 196, 196, 0) 106.98%);
+      content: "";
+      background: linear-gradient(
+        272.1deg,
+        #000000 -21.24%,
+        rgba(196, 196, 196, 0) 106.98%
+      );
       transform: matrix(-1, 0, 0, 1, 0, 0);
       z-index: 2;
     }
 
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -247,8 +266,8 @@ html, body{
   }
 }
 
-#info-panel{
-  .box-panel{
+#info-panel {
+  .box-panel {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     padding: 28px 16px;
@@ -258,55 +277,55 @@ html, body{
     position: relative;
     text-align: center;
 
-    &-item{
+    &-item {
       height: 100%;
       padding: 24px;
-      
-      &.right-left-bordered{
-        @include large{
-          border-right: 1px solid #C4C4C4;
-          border-left: 1px solid #C4C4C4;
+
+      &.right-left-bordered {
+        @include large {
+          border-right: 1px solid #c4c4c4;
+          border-left: 1px solid #c4c4c4;
         }
       }
 
-      &-heading{
+      &-heading {
         font-size: 28px;
       }
     }
   }
 }
 
-#mikro{
+#mikro {
   position: relative;
-  .dots{
+  .dots {
     position: absolute;
   }
 
-  .content{
+  .content {
     margin-top: 90px;
 
-    .heading-section{
-      h2{
+    .heading-section {
+      h2 {
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 30px;
       }
-      hr{
-        width:66px; 
-        background-color:$primary-color;
+      hr {
+        width: 66px;
+        background-color: $primary-color;
         height: 6px;
         margin-bottom: 64px;
       }
     }
 
-    .card-mikro{
-      .card-body{
-        span{
+    .card-mikro {
+      .card-body {
+        span {
           font-size: 18px;
           margin: 48px 0 24px 0;
         }
 
-        p{
+        p {
           font-size: 14px;
         }
       }
@@ -314,68 +333,68 @@ html, body{
   }
 }
 
-.heading-section-2{
-  hr{
-    width:45px; 
-    background-color:$primary-color;
+.heading-section-2 {
+  hr {
+    width: 45px;
+    background-color: $primary-color;
     height: 6px;
     margin-bottom: 29px;
-    margin-left: 0
-}
-}
-
-#bni-bsl2{
-  .heading-section-2{
-    h2{
-      margin-bottom: 30px;
-      font-size: 36px;
-    }
-  }
-
-  .content{
-    p{
-      font-size: 14px;
-      
-      @include large{
-        max-width: 500px;
-      }
-    }
-
-    img{
-      width: 100%;
-      max-height: 312px;
-      object-fit: cover;
-      box-shadow: 19px 37px 0 0 #F5F7FE;
-    }
+    margin-left: 0;
   }
 }
 
-#digital-lounge{
-  .heading-section-2{
-    h2{
+#bni-bsl2 {
+  .heading-section-2 {
+    h2 {
       margin-bottom: 30px;
       font-size: 36px;
     }
   }
 
   .content {
-    p{
+    p {
+      font-size: 14px;
+
+      @include large {
+        max-width: 500px;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-height: 312px;
+      object-fit: cover;
+      box-shadow: 19px 37px 0 0 #f5f7fe;
+    }
+  }
+}
+
+#digital-lounge {
+  .heading-section-2 {
+    h2 {
+      margin-bottom: 30px;
+      font-size: 36px;
+    }
+  }
+
+  .content {
+    p {
       font-size: 14px;
     }
   }
 }
 
-#sinergy-bumn{
+#sinergy-bumn {
   background-color: $primary-color;
   position: relative;
   z-index: 1;
   margin-top: 150px;
-  @include large{
+  @include large {
     margin-top: 180px;
   }
   margin-bottom: 100px;
-  
-  svg.top{
+
+  svg.top {
     position: absolute;
     top: 0;
     left: 0;
@@ -383,30 +402,30 @@ html, body{
     z-index: 1;
   }
 
-  svg.bottom{
+  svg.bottom {
     position: absolute;
     left: 0;
     width: 100%;
     z-index: 1;
   }
 
-  .content{
+  .content {
     position: relative;
     z-index: 99;
     padding-top: 270px;
     padding-bottom: 150px;
-    overflow: hidden; 
+    overflow: hidden;
 
-    .image-content{
+    .image-content {
       width: 100%;
-      border-radius: 16px ;
+      border-radius: 16px;
       position: relative;
       z-index: 1;
       display: flex;
-      padding: 30px;                                                                                                                              
-      
-      &::before{
-        content: '';
+      padding: 30px;
+
+      &::before {
+        content: "";
         position: absolute;
         z-index: -1;
         top: 0;
@@ -415,49 +434,49 @@ html, body{
         width: 100vh;
         height: 100%;
         align-items: center;
-        background-color: #E44D16;
-        border-radius: 16px ;
+        background-color: #e44d16;
+        border-radius: 16px;
       }
 
-      img{
+      img {
         width: 100%;
-        border-radius: 16px ;
+        border-radius: 16px;
       }
     }
   }
 }
 
-#ongoing{
-  .content{
+#ongoing {
+  .content {
     position: relative;
     margin-top: -70px;
-    .heading-section{
-      h2{
+    .heading-section {
+      h2 {
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 30px;
         line-height: 37px;
       }
-      hr{
-        width:66px; 
-        background-color:$primary-color;
+      hr {
+        width: 66px;
+        background-color: $primary-color;
         height: 6px;
         margin-bottom: 64px;
       }
     }
 
-    .card-mikro{
-      .card-body{
-        span{
+    .card-mikro {
+      .card-body {
+        span {
           font-size: 18px;
           margin: 48px 0 24px 0;
         }
 
-        p{
+        p {
           font-size: 14px;
         }
       }
-      .layered{
+      .layered {
         margin: 0 auto;
         position: relative;
         width: 100%;
@@ -466,14 +485,17 @@ html, body{
         display: flex;
         align-items: center;
         justify-content: center;
+        -ms-flex-pack: center;
+        display: -ms-flexbox;
+        display: -webkit-flex;
 
-        img{
+        img {
           width: 100%;
           position: relative;
           z-index: 9;
         }
 
-        span{
+        span {
           position: absolute;
           font-weight: bold;
           z-index: 10;
@@ -481,60 +503,60 @@ html, body{
       }
     }
 
-    .dots{
+    .dots {
       position: absolute;
       top: 0;
       right: -60px;
     }
 
-    hr.dash{
+    hr.dash {
       display: none;
-      border-top: 2px dashed #C4C4C4;
-      position:absolute;
+      border-top: 2px dashed #c4c4c4;
+      position: absolute;
       top: 300px;
       width: 80%;
       left: 10%;
 
-      @include large{
+      @include large {
         display: block;
       }
     }
   }
 }
 
-footer#footer{
+footer#footer {
   position: relative;
   margin-top: 120px;
   padding: 70px 0 70px 0;
 
-  .waves{
+  .waves {
     position: absolute;
     left: 0;
     top: -85px;
     width: 1437px;
 
-    @include large{
+    @include large {
       width: 100%;
-      top: calc(0px  - 7.5vw);
+      top: calc(0px - 7.5vw);
     }
   }
 
-  h5{
+  h5 {
     font-weight: bold;
     margin-bottom: 30px;
     font-size: 20px;
   }
 
-  ul li{
+  ul li {
     margin-bottom: 0.25rem;
   }
 }
 
-#go-to-top{
+#go-to-top {
   position: fixed;
   z-index: 999;
   right: 30px;
   bottom: 100px;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
-  display: none
+  display: none;
 }
