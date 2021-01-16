@@ -401,9 +401,16 @@ body {
 #sinergy-bumn .content {
   position: relative;
   z-index: 99;
-  padding-top: 270px;
+  padding-top: 160px;
   padding-bottom: 150px;
   overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  #sinergy-bumn .content {
+    padding-top: 270px;
+    padding-bottom: 150px;
+  }
 }
 
 #sinergy-bumn .content .image-content {
