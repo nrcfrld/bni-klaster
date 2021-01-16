@@ -370,10 +370,21 @@ body {
 }
 
 #digital-lounge {
+  position: relative;
   .heading-section-2 {
     h2 {
       margin-bottom: 30px;
       font-size: 36px;
+    }
+  }
+
+  .image-content {
+    position: relative;
+
+    .dots {
+      position: absolute;
+      top: 120px;
+      left: 160px;
     }
   }
 

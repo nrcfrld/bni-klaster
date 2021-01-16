@@ -360,9 +360,23 @@ body {
           box-shadow: 19px 37px 0 0 #f5f7fe;
 }
 
+#digital-lounge {
+  position: relative;
+}
+
 #digital-lounge .heading-section-2 h2 {
   margin-bottom: 30px;
   font-size: 36px;
+}
+
+#digital-lounge .image-content {
+  position: relative;
+}
+
+#digital-lounge .image-content .dots {
+  position: absolute;
+  top: 120px;
+  left: 160px;
 }
 
 #digital-lounge .content p {
