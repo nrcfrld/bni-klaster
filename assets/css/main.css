@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  margin-top: 60px;
+}
+
 .text-second-primary-color {
   color: #005e6a !important;
 }
@@ -30,6 +34,10 @@ body {
 }
 
 .bg-primary-color {
+  background-color: #f15a23;
+}
+
+.bg-primary-dark-color {
   background-color: #f15a23;
 }
 
@@ -541,7 +549,7 @@ body {
 footer#footer {
   position: relative;
   margin-top: 120px;
-  padding: 70px 0 70px 0;
+  padding: 70px 0 0 0;
 }
 
 footer#footer .waves {
@@ -566,6 +574,14 @@ footer#footer h5 {
 
 footer#footer ul li {
   margin-bottom: 0.25rem;
+}
+
+footer#footer .footer-year {
+  background-color: #e4521c;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  position: relative;
+  bottom: 0;
 }
 
 #go-to-top {
