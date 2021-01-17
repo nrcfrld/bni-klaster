@@ -1,0 +1,11 @@
+@import "../base/variables";
+
+.heading-section-2 {
+  hr {
+    width: 45px;
+    background-color: $primary-color;
+    height: 6px;
+    margin-bottom: 29px;
+    margin-left: 0;
+  }
+}

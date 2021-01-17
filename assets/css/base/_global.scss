@@ -1,0 +1,39 @@
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: $dark-color;
+  overflow-x: hidden;
+}
+
+body {
+  margin-top: 60px;
+}
+
+.text-second-primary-color {
+  color: $second-primary-color !important;
+}
+
+.text-primary {
+  color: $primary-color !important;
+}
+
+.bg-primary-color {
+  background-color: $primary-color;
+}
+
+.bg-primary-dark-color {
+  background-color: $primary-color;
+}
+
+.bg-primary-dark-color-hover:hover {
+  background-color: $primary-dark-color;
+}
+
+.font-weight-semibold {
+  font-weight: 600;
+}
+
+.h-24px {
+  height: 24px;
+}

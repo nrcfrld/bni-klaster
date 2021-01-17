@@ -1,0 +1,16 @@
+.btn {
+  &.btn-primary,
+  &.btn-primary:active {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+    border-radius: 10px;
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(241, 90, 35, 0.4);
+    }
+
+    &:hover {
+      background-color: $primary-dark-color !important;
+    }
+  }
+}
