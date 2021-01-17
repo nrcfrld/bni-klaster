@@ -143,4 +143,37 @@ header .navbar-nav .nav-item.dropdown .dropdown-menu::after {
 header .navbar-nav .dropdown-item {
   font-weight: 600;
 }
-/*# sourceMappingURL=main.css.map */
+
+.btn.btn-primary, .btn.btn-primary:active {
+  background-color: #f15a23 !important;
+  border-color: #f15a23 !important;
+  border-radius: 10px;
+}
+
+.btn.btn-primary:focus, .btn.btn-primary:active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(241, 90, 35, 0.4);
+          box-shadow: 0 0 0 0.2rem rgba(241, 90, 35, 0.4);
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:active:hover {
+  background-color: #e4521c !important;
+}
+
+.heading-section-2 hr {
+  width: 45px;
+  background-color: #f15a23;
+  height: 6px;
+  margin-bottom: 29px;
+  margin-left: 0;
+}
+
+#go-to-top {
+  position: fixed;
+  z-index: 999;
+  right: 30px;
+  bottom: 100px;
+  -webkit-filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
+  display: none;
+}
+/*# sourceMappingURL=gallery.css.map */
