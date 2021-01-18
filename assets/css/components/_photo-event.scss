@@ -1,0 +1,37 @@
+@import "../base/variables";
+
+.card.card-photo-event {
+  background-color: transparent;
+  border: none;
+
+  .card-body {
+    padding: 0;
+
+    .photo-event-info {
+      margin-top: 20px;
+      .event-date {
+        background-color: $second-primary-color;
+        color: #fff;
+
+        .date {
+          font-size: 24px;
+        }
+
+        .month {
+          font-size: 18px;
+        }
+      }
+
+      .event-desc {
+        margin-left: 16px;
+        h3 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

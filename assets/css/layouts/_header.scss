@@ -22,6 +22,8 @@ header {
 
         @include medium {
           top: 60px;
+          right: 0;
+          left: unset;
         }
 
         .dropdown-item:focus {

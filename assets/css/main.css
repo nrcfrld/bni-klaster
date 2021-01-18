@@ -103,6 +103,8 @@ header .navbar-nav .nav-item.dropdown .dropdown-menu {
 @media (min-width: 992px) {
   header .navbar-nav .nav-item.dropdown .dropdown-menu {
     top: 60px;
+    right: 0;
+    left: unset;
   }
 }
 

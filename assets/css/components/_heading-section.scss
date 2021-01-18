@@ -1,5 +1,14 @@
 @import "../base/variables";
 
+.heading-section {
+  hr {
+    width: 66px;
+    background-color: $primary-color;
+    height: 6px;
+    margin: 0;
+  }
+}
+
 .heading-section-2 {
   hr {
     width: 45px;

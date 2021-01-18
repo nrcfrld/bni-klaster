@@ -103,6 +103,8 @@ header .navbar-nav .nav-item.dropdown .dropdown-menu {
 @media (min-width: 992px) {
   header .navbar-nav .nav-item.dropdown .dropdown-menu {
     top: 60px;
+    right: 0;
+    left: unset;
   }
 }
 
@@ -157,6 +159,13 @@ header .navbar-nav .dropdown-item {
 
 .btn.btn-primary:hover, .btn.btn-primary:active:hover {
   background-color: #e4521c !important;
+}
+
+.heading-section hr {
+  width: 66px;
+  background-color: #f15a23;
+  height: 6px;
+  margin: 0;
 }
 
 .heading-section-2 hr {

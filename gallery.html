@@ -23,6 +23,12 @@
       href="./assets/modules/OwlCarousel2-2.3.4/assets/owl.theme.default.min.css"
     />
 
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="./assets/modules/fontawesome-free-5.15.1-web/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/page/gallery.css" />
 
@@ -109,7 +115,7 @@
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main class="bg-white">
       <section id="hero-gallery" class="mb-5">
         <div class="image-content">
           <img src="./assets/img/gallery-hero-image.jpg" alt="" class="w-100" />
@@ -117,31 +123,236 @@
       </section>
 
       <section id="gallery">
+        <img class="dots" src="./assets/img/svg/dots-4.svg" alt="" />
         <div class="content">
           <div class="container">
             <div class="heading-section">
-              <h2 class="text-center">Our Gallery</h2>
-              <hr />
+              <h2
+                class="text-center font-weight-bold mb-4 text-second-primary-color"
+              >
+                Our Gallery
+              </h2>
+              <hr class="mx-auto" />
             </div>
 
             <div class="gallery-images">
               <div class="row justify-content-center">
                 <div class="col-11">
                   <!-- Gallery item -->
+                  <div class="grid">
+                    <div class="grid-item">
+                      <img src="./assets/img/gallery/1.jpg" alt="" />
+                    </div>
+                    <div class="grid-item grid-item--width2">
+                      <img src="./assets/img/gallery/2.jpg" alt="" />
+                    </div>
+                    <div class="grid-item">...</div>
+                    ...
+                  </div>
                 </div>
               </div>
-              <a href="#" class="btn btn-primary">Tampilkan semuanya</a>
+              <div class="cta text-center mb-3">
+                <a href="#" class="btn btn-primary btn-lg"
+                  >Tampilkan semuanya</a
+                >
+              </div>
             </div>
           </div>
         </div>
+        <img class="dots-2" src="./assets/img/svg/dots-4.svg" />
       </section>
 
       <section id="photos-event">
         <div class="content">
           <div class="container">
             <div class="heading-section">
-              <h2 class="text-center">Foto Event Terbaru</h2>
-              <hr />
+              <h2 class="font-weight-bold text-second-primary-color">
+                Foto Event Terbaru
+              </h2>
+              <div class="d-flex justify-content-between align-items-center">
+                <hr class="mr-auto" />
+                <div class="dropdown text-right custom-dropdown">
+                  <button
+                    class="btn bg-white btn-light dropdown-toggle font-weight-semibold text-second-primary-color"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    data-offset="0,20"
+                  >
+                    Range waktu
+
+                    <i class="fas fa-chevron-down text-primary"></i>
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">2 minggu lalu</a>
+                    <a class="dropdown-item" href="#">1 bulan lalu</a>
+                    <a class="dropdown-item" href="#">3 bulan lalu</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div class="card card-photo-event">
+                  <div class="card-body">
+                    <img
+                      src="./assets/img/photo-event/image 53.jpg"
+                      alt=""
+                      class="w-100 img-fluid"
+                    />
+
+                    <div class="photo-event-info d-flex">
+                      <div
+                        class="event-date d-flex flex-column text-center px-3"
+                      >
+                        <span class="date font-weight-bold">20</span>
+                        <span class="month font-weight-bold">DEC</span>
+                      </div>
+                      <div class="event-desc">
+                        <h3 class="font-weight-bold text-uppercase">
+                          event tentang bni bsl2
+                        </h3>
+                        <p>Cabang BNI Sulsel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div class="card card-photo-event">
+                  <div class="card-body">
+                    <img
+                      src="./assets/img/photo-event/image 53.jpg"
+                      alt=""
+                      class="w-100 img-fluid"
+                    />
+
+                    <div class="photo-event-info d-flex">
+                      <div
+                        class="event-date d-flex flex-column text-center px-3"
+                      >
+                        <span class="date font-weight-bold">20</span>
+                        <span class="month font-weight-bold">DEC</span>
+                      </div>
+                      <div class="event-desc">
+                        <h3 class="font-weight-bold text-uppercase">
+                          event tentang bni bsl2
+                        </h3>
+                        <p>Cabang BNI Sulsel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div class="card card-photo-event">
+                  <div class="card-body">
+                    <img
+                      src="./assets/img/photo-event/image 53.jpg"
+                      alt=""
+                      class="w-100 img-fluid"
+                    />
+
+                    <div class="photo-event-info d-flex">
+                      <div
+                        class="event-date d-flex flex-column text-center px-3"
+                      >
+                        <span class="date font-weight-bold">20</span>
+                        <span class="month font-weight-bold">DEC</span>
+                      </div>
+                      <div class="event-desc">
+                        <h3 class="font-weight-bold text-uppercase">
+                          event tentang bni bsl2
+                        </h3>
+                        <p>Cabang BNI Sulsel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div class="card card-photo-event">
+                  <div class="card-body">
+                    <img
+                      src="./assets/img/photo-event/image 53.jpg"
+                      alt=""
+                      class="w-100 img-fluid"
+                    />
+
+                    <div class="photo-event-info d-flex">
+                      <div
+                        class="event-date d-flex flex-column text-center px-3"
+                      >
+                        <span class="date font-weight-bold">20</span>
+                        <span class="month font-weight-bold">DEC</span>
+                      </div>
+                      <div class="event-desc">
+                        <h3 class="font-weight-bold text-uppercase">
+                          event tentang bni bsl2
+                        </h3>
+                        <p>Cabang BNI Sulsel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div class="card card-photo-event">
+                  <div class="card-body">
+                    <img
+                      src="./assets/img/photo-event/image 53.jpg"
+                      alt=""
+                      class="w-100 img-fluid"
+                    />
+
+                    <div class="photo-event-info d-flex">
+                      <div
+                        class="event-date d-flex flex-column text-center px-3"
+                      >
+                        <span class="date font-weight-bold">20</span>
+                        <span class="month font-weight-bold">DEC</span>
+                      </div>
+                      <div class="event-desc">
+                        <h3 class="font-weight-bold text-uppercase">
+                          event tentang bni bsl2
+                        </h3>
+                        <p>Cabang BNI Sulsel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div class="card card-photo-event">
+                  <div class="card-body">
+                    <img
+                      src="./assets/img/photo-event/image 53.jpg"
+                      alt=""
+                      class="w-100 img-fluid"
+                    />
+
+                    <div class="photo-event-info d-flex">
+                      <div
+                        class="event-date d-flex flex-column text-center px-3"
+                      >
+                        <span class="date font-weight-bold">20</span>
+                        <span class="month font-weight-bold">DEC</span>
+                      </div>
+                      <div class="event-desc">
+                        <h3 class="font-weight-bold text-uppercase">
+                          event tentang bni bsl2
+                        </h3>
+                        <p>Cabang BNI Sulsel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -252,32 +463,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/modules/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          items: 1,
-          loop: true,
-          autoplay: true,
-          autoplayTimeout: 5000,
-          animateOut: "fadeOut",
-          nav: true,
-          navText: [
-            `<div class="nav-button owl-prev" tabindex="-1">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.8457 24.5317L21.143 26.3086L13.8457 18.6932L21.143 11.0778L22.8457 12.8547L17.2511 18.6932L22.8457 24.5317Z" fill="white"/>
-              <circle cx="18" cy="18" r="17" transform="rotate(-180 18 18)" stroke="white" stroke-width="2"/>
-              </svg>
-              </div>`,
-            `<div class="nav-button owl-next">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1538 24.5317L14.8565 26.3086L22.1538 18.6932L14.8565 11.0778L13.1538 12.8547L18.7484 18.6932L13.1538 24.5317Z" fill="white"/>
-              <circle r="17" transform="matrix(1 0 0 -1 18 18)" stroke="white" stroke-width="2"/>
-              </svg>
-              </div>`,
-          ],
-          dots: true,
-          dotsContainer: ".owl-container-dots-button",
+        $(".grid").masonry({
+          // options
+          itemSelector: ".grid-item",
+          columnWidth: 200,
         });
       });
     </script>
