@@ -4,6 +4,7 @@ body {
   font-weight: 500;
   color: #353535;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 body {
@@ -20,6 +21,10 @@ body {
 
 .bg-primary-color {
   background-color: #f15a23;
+}
+
+.bg-second-primary-color {
+  background-color: #005e6a;
 }
 
 .bg-primary-dark-color {
