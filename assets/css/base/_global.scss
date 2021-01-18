@@ -4,6 +4,7 @@ body {
   font-weight: 500;
   color: $dark-color;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 body {
@@ -20,6 +21,10 @@ body {
 
 .bg-primary-color {
   background-color: $primary-color;
+}
+
+.bg-second-primary-color {
+  background-color: $second-primary-color;
 }
 
 .bg-primary-dark-color {

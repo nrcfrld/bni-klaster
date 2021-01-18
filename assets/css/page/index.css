@@ -4,6 +4,7 @@ body {
   font-weight: 500;
   color: #353535;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 body {
@@ -20,6 +21,10 @@ body {
 
 .bg-primary-color {
   background-color: #f15a23;
+}
+
+.bg-second-primary-color {
+  background-color: #005e6a;
 }
 
 .bg-primary-dark-color {
@@ -103,6 +108,8 @@ header .navbar-nav .nav-item.dropdown .dropdown-menu {
 @media (min-width: 992px) {
   header .navbar-nav .nav-item.dropdown .dropdown-menu {
     top: 60px;
+    right: 0;
+    left: unset;
   }
 }
 
@@ -157,6 +164,13 @@ header .navbar-nav .dropdown-item {
 
 .btn.btn-primary:hover, .btn.btn-primary:active:hover {
   background-color: #e4521c !important;
+}
+
+.heading-section hr {
+  width: 66px;
+  background-color: #f15a23;
+  height: 6px;
+  margin: 0;
 }
 
 .heading-section-2 hr {

@@ -1,0 +1,102 @@
+@import "../main";
+@import "../components/buttons";
+
+html {
+  overflow-y: hidden;
+}
+
+body {
+  margin: 0 !important;
+}
+
+.bg-login {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0 10px;
+  background: linear-gradient(
+    270.73deg,
+    #f1ad23 -22.1%,
+    #ce5b2d -2.58%,
+    #005e6a 101.44%
+  );
+
+  .login {
+    z-index: 9;
+    @include large {
+      width: 440px;
+    }
+  }
+
+  .login-box {
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+    .login-box-logo {
+      padding: 22px 0;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .login-box-form {
+      padding: 50px 24px;
+      @include large {
+        padding: 50px 63px;
+      }
+      border-radius: 0 0 20px 20px;
+
+      .btn-login {
+        border-radius: 38px;
+        padding: 20px 4px;
+      }
+
+      .forgot-password {
+        color: #81cad3;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+      .form-group {
+        .form-control {
+          padding: 18px 20px;
+          background-color: #107a88;
+          border: none;
+          outline: none;
+          border-radius: 38px;
+          color: white;
+          height: unset;
+          width: 100%;
+
+          &::placeholder {
+            color: #81cad3;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url(../../img/svg/login.svg);
+    background-repeat: no-repeat;
+    background-position: 600px 280px;
+  }
+
+  .left-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .right-svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../base/variables";
+
+.dropdown.custom-dropdown {
+  .dropdown-toggle {
+    border: 2px solid $second-primary-color;
+    padding: 12px 24px;
+    font-size: 14px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
