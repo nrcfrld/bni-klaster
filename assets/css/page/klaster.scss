@@ -32,8 +32,61 @@ $dark-color: #353535;
 
 
 #klaster-map {
-    
-    .map {
-        height: 475px;
+    height: 475px;
+    .map-list{
+        font-size: 16px;
+        .title-list {
+            color: #A9A9A9;
+        }
+        .list {
+            list-style: none;
+            font-size: 16px;
+            color: $second-primary-color;
+            font-weight: 600;
+            overflow: scroll;
+            overflow-x: hidden;
+            align-items: center;
+        }
     }
+
 }
+
+#klaster {
+    height: 652px;
+    h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: $second-primary-color;
+    }
+    .hr-line{
+        height: 6px;
+        width: 66px;
+        background-color: $primary-color;
+        position: absolute;
+        
+    }
+    .klaster-card{
+        width: 262px;
+        height: 252px;
+        img{
+            height: 171px;
+            width: 262px;
+            
+            }
+        .card-description{
+            width: 262px;
+            height: 75px;
+            .card-title{
+                
+                font-size: 16px;
+                font-weight: bold;
+                color: $second-primary-color;
+            }
+            .card-desc {
+                font-size: 12px;
+            }
+        
+        }
+        
+    }
+}   
