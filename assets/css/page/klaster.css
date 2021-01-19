@@ -27,7 +27,8 @@
   font-weight: 400;
 }
 
-#klaster-map {
+#klaster-map .map {
+  background-color: #A9A9A9;
   height: 475px;
 }
 
@@ -37,10 +38,6 @@
 
 #klaster-map .map-list .title-list {
   color: #A9A9A9;
-}
-
-#klaster-map .map-list .map {
-  background-color: #A9A9A9;
 }
 
 #klaster-map .map-list .list {
