@@ -7,6 +7,14 @@
   .card-body {
     padding: 0;
 
+    img {
+      @include small {
+        height: 220px;
+      }
+      height: 300px;
+      object-fit: cover;
+    }
+
     .photo-event-info {
       margin-top: 20px;
       .event-date {

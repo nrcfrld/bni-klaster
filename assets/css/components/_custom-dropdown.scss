@@ -1,6 +1,26 @@
 @import "../base/variables";
 
 .dropdown.custom-dropdown {
+  .dropdown-menu {
+    border-bottom-right-radius: 30px;
+    padding: 0;
+    min-width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+
+    .dropdown-item {
+      padding: 16px 22px;
+
+      &:hover {
+        background-color: rgba(0, 94, 106, 0.3);
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 30px;
+      }
+    }
+  }
+
   .dropdown-toggle {
     border: 2px solid $second-primary-color;
     padding: 12px 24px;

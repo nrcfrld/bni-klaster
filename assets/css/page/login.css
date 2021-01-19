@@ -43,6 +43,11 @@ body {
   height: 24px;
 }
 
+.object-fit-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 footer#footer {
   position: relative;
   bottom: 0;
