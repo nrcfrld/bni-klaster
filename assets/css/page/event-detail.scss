@@ -1,0 +1,54 @@
+@import "../main";
+@import "../components/buttons";
+@import "../components/scroll_top_button";
+
+#bg {
+  min-height: 250px;
+}
+
+#event-detail {
+  margin-top: -80px;
+  padding-bottom: 80px;
+  img.event-poster {
+    padding: 24px;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .event-time {
+    color: #31a2b0;
+    font-weight: bold;
+  }
+
+  .event-info {
+    text-align: center;
+    padding: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .event-description {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+
+    p {
+      color: #979494;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .additional-info {
+      font-size: 14px;
+      font-weight: bold;
+      h4 {
+        font-weight: bold;
+        font-size: 14px;
+        color: #979494;
+      }
+    }
+  }
+}
