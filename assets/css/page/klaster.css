@@ -27,7 +27,8 @@
   font-weight: 400;
 }
 
-#klaster-map {
+#klaster-map .map {
+  background-color: #A9A9A9;
   height: 475px;
 }
 
