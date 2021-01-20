@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+i<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -30,7 +30,7 @@
     />
 
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/page/event-detail.css" />
+    <link rel="stylesheet" href="./assets/css/page/synergy.css" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -123,61 +123,154 @@
     </header>
 
     <!-- Main Content -->
-    <main>
-      <section id="bg" class="bg-second-primary-color py-5"></section>
+    <main class="pb-5">
+      <!-- Hero Section -->
+      <section id="hero" class="bg-primary-color">
+        <div class="background"></div>
 
-      <section id="event-detail">
+        <div class="container text-center text-white">
+          <div class="caption mx-auto">
+            <h1 class="font-weight-bold">Sinergi BUMN</h1>
+            <p>
+              BNI Divisi BSL2 juga menggandeng beberapa BUMN untuk bekerja sama
+              dalam digitalisasi di sektor produksi, antara lain ertanian dan
+              perikanan.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero Section -->
+
+      <!-- Carousel Section -->
+      <section id="carousel-sinergy">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-11">
-              <p class="event-time">This Month</p>
-              <div class="row">
-                <div class="col-lg-7">
-                  <img
-                    src="./assets/img/photo-event/image 41.jpg"
-                    alt=""
-                    class="event-poster w-100"
-                  />
-                </div>
-                <div class="col-lg-5 mt-lg-0 mt-3">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="event-info">
-                        <span class="text-primary">Waktu</span>
-                        <span class="d-block">29 Desember 2019</span>
+          <div class="owl-carousel" id="owl-list-company">
+            <div class="item">
+              <div class="company">
+                <img src="./assets/img/company/1.png" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="company">
+                <img src="./assets/img/company/2.png" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="company">
+                <img src="./assets/img/company/3.png" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="company">
+                <img src="./assets/img/company/4.png" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="company">
+                <img src="./assets/img/company/5.png" alt="" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="company">
+                <img src="./assets/img/company/6.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Carousel Section -->
+
+      <!-- Main Synergy Section -->
+      <section id="main-sinergy">
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-lg-6">
+              <div class="content">
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                  >
+                    <div class="owl-carousel" id="image-carousel">
+                      <div class="item">
+                        <img
+                          src="./assets/img/sinergi/gallery.jpg"
+                          alt=""
+                          class="w-100"
+                        />
                       </div>
-                    </div>
-                    <div class="col-md-6 mt-md-0 mt-3">
-                      <div class="event-info">
-                        <span class="text-primary">Cabang</span>
-                        <span class="d-block">Sulawesi Selatan</span>
+                      <div class="item">
+                        <img
+                          src="./assets/img/photo-event/image 41.jpg"
+                          alt=""
+                          class="w-100"
+                        />
                       </div>
                     </div>
                   </div>
-                  <div class="row mt-3">
-                    <div class="col-12">
-                      <div class="card rounded-0 border-0 event-description">
-                        <div class="card-body shadow">
-                          <h2 class="font-weight-bold">EVENT BNI BSL2</h2>
-                          <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Lorem Ipsum is simply
-                            dummy text of the printing and typesetting industry.
-                            Lorem
-                          </p>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                  >
+                    <img
+                      src="./assets/img/sinergi/skema.jpg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="content">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link active"
+                      id="pills-home-tab"
+                      data-toggle="pill"
+                      href="#pills-home"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                      >Gallery</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link disabled"
+                      id="pills-profile-tab"
+                      data-toggle="pill"
+                      href="#pills-profile"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                      >Skema</a
+                    >
+                  </li>
+                </ul>
+                <div class="card rounded-0 border-0 bg-white card-sinergy">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <img src="./assets/img/company/1.png" alt="" />
+                      <h3 class="font-weight-bold ml-3">HARA</h3>
+                    </div>
+                    <p class="font-weight-normal mt-3">
+                      Lorem IpsumAnim tempor adipisicing mollit irure commodo
+                      nostrud irure. Eiusmod duis consequat excepteur ullamco do
+                      magna ullamco excepteur Lorem laboris veniam fugiat Anim
+                      tempor adipisicing mollit irure commodo nostrud irure.
+                      Eiusmod duis consequat excepteur ullamco do magna ullamco
+                      excepteur Lorem laboris veniam fugiat
+                    </p>
 
-                          <div class="d-flex justify-content-between">
-                            <div class="additional-info">
-                              <h4>Penyaluran Kredit</h4>
-                              <span>100M</span>
-                            </div>
-                            <div class="additional-info">
-                              <h4>Penerima Kredit</h4>
-                              <span>140 Orang</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="d-flex flex-column">
+                      <span class="font-weight-normal">Kredit Tersalurkan</span>
+                      <span class="font-weight-bold mt-3">Rp. 100 M</span>
                     </div>
                   </div>
                 </div>
@@ -186,6 +279,7 @@
           </div>
         </div>
       </section>
+      <!-- End Main Synergy Section -->
 
       <button type="button" class="btn btn-primary" id="go-to-top">
         <svg
@@ -293,6 +387,42 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/modules/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        // List Company Carousel
+        $("#owl-list-company").owlCarousel({
+          nav: true,
+          margin: 24,
+          autoWidth: true,
+          navText: [
+            `<i class="fas fa-chevron-left"></i>`,
+            `<i class="fas fa-chevron-right"></i>`,
+          ],
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 3,
+            },
+            1200: {
+              items: 5,
+            },
+          },
+        });
+        // End List Company Carousel
+
+        $("#image-carousel").owlCarousel({
+          nav: true,
+          items: 1,
+          navText: [
+            `<i class="fas fa-chevron-left"></i>`,
+            `<i class="fas fa-chevron-right"></i>`,
+          ],
+        });
+      });
+    </script>
   </body>
 </html>
