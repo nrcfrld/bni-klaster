@@ -5,7 +5,6 @@ body {
   color: #353535;
   overflow-x: hidden;
   min-height: 100vh;
-  padding: 0 !important;
 }
 
 body {
@@ -49,10 +48,6 @@ footer#footer .footer-year {
   padding-bottom: 20px;
   position: relative;
   bottom: 0;
-}
-
-header .navbar {
-  padding-right: 0 !important;
 }
 
 header .navbar .navbar-nav .nav-item {
@@ -313,6 +308,10 @@ header .navbar .navbar-nav .dropdown-item {
       grid-row-end: span 2;
 }
 
+.modal-custom.show {
+  padding-right: 0 !important;
+}
+
 .modal-custom .close {
   position: absolute;
   top: 0;
@@ -323,8 +322,10 @@ header .navbar .navbar-nav .dropdown-item {
   cursor: pointer;
 }
 
-.modal-custom .modal-content {
-  padding: 65px 60px;
+@media (min-width: 992px) {
+  .modal-custom .modal-content {
+    padding: 65px 60px;
+  }
 }
 
 .modal-custom .gallery-modal-title {
@@ -382,8 +383,21 @@ header .navbar .navbar-nav .dropdown-item {
   top: 50%;
 }
 
+.modal-custom .image-carousel.image-carousel-2 .owl-nav .owl-prev {
+  left: 0;
+}
+
+.modal-custom .image-carousel.image-carousel-2 .owl-nav .owl-next {
+  right: 0;
+}
+
 .modal-custom .image-carousel img {
   width: 100%;
+}
+
+body.modal-open {
+  overflow: hidden;
+  padding-right: 0 !important;
 }
 
 main {
@@ -431,5 +445,9 @@ main {
   background-color: #f0f1f4;
   padding-top: 60px;
   padding-bottom: 100px;
+}
+
+#photos-event .photo-event-item {
+  cursor: pointer;
 }
 /*# sourceMappingURL=gallery.css.map */

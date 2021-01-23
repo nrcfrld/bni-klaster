@@ -1,4 +1,7 @@
 .modal-custom {
+  &.show {
+    padding-right: 0 !important;
+  }
   .close {
     position: absolute;
     top: 0;
@@ -10,7 +13,9 @@
   }
 
   .modal-content {
-    padding: 65px 60px;
+    @include medium {
+      padding: 65px 60px;
+    }
   }
 
   .gallery-modal-title {
@@ -64,8 +69,25 @@
       top: 50%;
     }
 
+    &.image-carousel-2 {
+      .owl-nav .owl-prev {
+        left: 0;
+      }
+
+      .owl-nav .owl-next {
+        right: 0;
+      }
+    }
+
     img {
       width: 100%;
     }
+  }
+}
+
+body {
+  &.modal-open {
+    overflow: hidden;
+    padding-right: 0 !important;
   }
 }

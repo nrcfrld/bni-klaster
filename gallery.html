@@ -40,6 +40,8 @@
     />
   </head>
   <body>
+
+    <!-- Modal Gallery -->
     <div class="modal fade modal-gallery modal-custom" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl" role="document">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -91,6 +93,64 @@
         </div>
       </div>
     </div>
+    <!-- End Modal -->
+
+    <!-- Modal Photo Event -->
+    <div class="modal fade modal-gallery modal-custom" id="photoEventModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="d-flex mb-5 align-items-center">
+              <!-- Date Info -->
+              <div class="d-inline-flex bg-second-primary-color text-white font-weight-bold flex-column text-center px-3 py-1">
+                <span>15</span>
+                <span class="text-uppercase">okt</span>
+              </div>
+
+              <span class="font-weight-bold ml-3">EVENT TENTANG BNI BSL2</span>
+              <span class="text-sm ml-auto">Cabang BNI Jabar</span>
+            </div>
+
+            <div class="owl-carousel image-carousel image-carousel-2">
+              <div class="item">
+                <img src="./assets/img/gallery/slide-1.jpg" alt="" class="w-75 mx-auto">
+              </div>
+              <div class="item">
+                <img src="./assets/img/sinergi/gallery.jpg" alt="" class="w-75 mx-auto">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer mt-5">
+            <div class="grid-layout grid-layout-3column mt-3">
+              <div class="grid-item row-span-2">
+                <img src="./assets/img/gallery/image 47.jpg" alt="" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="grid-item">
+                <img src="./assets/img/gallery/image 49.jpg" alt="" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="grid-item">
+                <img src="./assets/img/gallery/image 50.jpg" alt="" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="grid-item">
+                <img src="./assets/img/gallery/image 51.jpg" alt="" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="grid-item">
+                <img src="./assets/img/gallery/image 52.jpg" alt="" class="w-100 h-100 object-fit-cover">
+              </div>
+            </div>
+            <div class="text-center w-100">
+              <a href="#" class="btn btn-primary btn-lg">Tampilkan Semuanya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    
     <!-- Header -->
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-3">
@@ -275,7 +335,7 @@
                     <img
                       src="./assets/img/photo-event/image 53.jpg"
                       alt=""
-                      class="w-100 img-fluid"
+                      class="w-100 img-fluid photo-event-item"
                     />
 
                     <div class="photo-event-info d-flex">
@@ -301,7 +361,7 @@
                     <img
                       src="./assets/img/photo-event/image 55.jpg"
                       alt=""
-                      class="w-100 img-fluid"
+                      class="w-100 img-fluid photo-event-item"
                     />
 
                     <div class="photo-event-info d-flex">
@@ -327,7 +387,7 @@
                     <img
                       src="./assets/img/photo-event/image 56.jpg"
                       alt=""
-                      class="w-100 img-fluid"
+                      class="w-100 img-fluid photo-event-item"
                     />
 
                     <div class="photo-event-info d-flex">
@@ -353,7 +413,7 @@
                     <img
                       src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1430&q=80"
                       alt=""
-                      class="w-100 img-fluid"
+                      class="w-100 img-fluid photo-event-item"
                     />
 
                     <div class="photo-event-info d-flex">
@@ -379,7 +439,7 @@
                     <img
                       src="./assets/img/photo-event/image 53.jpg"
                       alt=""
-                      class="w-100 img-fluid"
+                      class="w-100 img-fluid photo-event-item"
                     />
 
                     <div class="photo-event-info d-flex">
@@ -405,7 +465,7 @@
                     <img
                       src="./assets/img/photo-event/image 53.jpg"
                       alt=""
-                      class="w-100 img-fluid"
+                      class="w-100 img-fluid photo-event-item"
                     />
 
                     <div class="photo-event-info d-flex">
@@ -544,6 +604,11 @@
         // Modal Gallery
         $('.gallery-item').on("click", function(){
           $('#galleryModal').modal('show');
+        });
+
+        // Modal Photo Event
+        $('.photo-event-item').on("click", function(){
+          $('#photoEventModal').modal('show');
         });
 
         $(".image-carousel").owlCarousel({
