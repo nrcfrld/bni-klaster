@@ -1,7 +1,10 @@
-@import "../main";
+@import "../base/variables";
+@import "../base/global";
+@import "../base/mixins";
+@import "../layouts/footer";
+@import "../layouts/header";
 @import "../components/buttons";
 @import "../components/scroll_top_button";
-
 #bg {
   min-height: 250px;
 }

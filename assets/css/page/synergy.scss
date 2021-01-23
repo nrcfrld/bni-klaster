@@ -1,7 +1,10 @@
+@import "../base/variables";
+@import "../base/global";
+@import "../base/mixins";
+@import "../layouts/footer";
+@import "../layouts/header";
 @import "../components/scroll_top_button";
 @import "../components/buttons";
-@import "../base/mixins";
-@import "../base/variables";
 
 body {
   background-color: #e8ecf1;
@@ -125,7 +128,7 @@ body {
   background-color: #e8ecf1;
   margin-bottom: 50px;
 
-  #image-carousel {
+  .image-carousel {
     .owl-carousel {
       position: relative;
     }

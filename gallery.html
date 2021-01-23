@@ -40,6 +40,57 @@
     />
   </head>
   <body>
+    <div class="modal fade modal-gallery modal-custom" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="gallery-modal-title mb-3">
+              Gallery Foto BNI BSL2
+            </h2>
+
+            <div class="owl-carousel image-carousel">
+              <div class="item">
+                <img src="./assets/img/gallery/slide-1.jpg" alt="" class="w-100">
+                <p class="description mt-3">Lorem Ipsum Anim tempor adipisicing mollit irure commodo nostrud irure. Eiusmod duis consequat excepteur ullamco 
+                  do magna ullamco excepteur Lorem laboris veniam fugiat Lorem Ipsum Anim tempor adipisicing mollit irure commodo 
+                  nostrud irure. Eiusmod duis consequat excepteur ullamco do magna  ullamco excepteur Lorem laboris veniam fugiat .</p>
+              </div>
+              <div class="item">
+                <img src="./assets/img/sinergi/gallery.jpg" alt="" class="w-100">
+                <p class="description mt-3">Lorem Ipsum Anim tempor adipisicing mollit irure commodo nostrud irure. Eiusmod duis consequat excepteur ullamco 
+                  do magna ullamco excepteur Lorem laboris veniam fugiat Lorem Ipsum Anim tempor adipisicing mollit irure commodo 
+                  nostrud irure. Eiusmod duis consequat excepteur ullamco do magna  ullamco excepteur Lorem laboris veniam fugiat .</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="grid-layout grid-layout-3column mt-3">
+              <div class="grid-item row-span-2">
+                <img src="./assets/img/gallery/image 47.jpg" alt="" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="grid-item">
+                <img src="./assets/img/gallery/image 49.jpg" alt="" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="grid-item">
+                <img src="./assets/img/gallery/image 50.jpg" alt="" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="grid-item">
+                <img src="./assets/img/gallery/image 51.jpg" alt="" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="grid-item">
+                <img src="./assets/img/gallery/image 52.jpg" alt="" class="w-100 h-100 object-fit-cover">
+              </div>
+            </div>
+            <div class="text-center w-100">
+              <a href="#" class="btn btn-primary btn-lg">Tampilkan Semuanya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Header -->
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-3">
@@ -139,34 +190,36 @@
               <div class="row justify-content-center mt-5">
                 <div class="col-12">
                   <!-- Gallery item -->
-                  <div class="grid-layout">
+                  <div class="grid-layout grid-layout-4column">
                     <div class="grid-item">
-                      <img src="./assets/img/gallery/1.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover" data-toggle="modal" data-target="#exampleModal">
+                      <img src="./assets/img/gallery/1.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover gallery-item">
                     </div>
                     <div class="grid-item row-span-2">
-                      <img src="./assets/img/gallery/4.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                      <img src="./assets/img/gallery/4.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover gallery-item">
                     </div>
-                    <div class="grid-item col-span-2">
-                      <img src="./assets/img/gallery/5.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
-                    </div>
-                    <div class="grid-item">
-                      <img src="./assets/img/gallery/2.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                    <div class="grid-item span-2">
+                      <img src="./assets/img/gallery/5.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover gallery-item">
                     </div>
                     <div class="grid-item">
-                      <img src="./assets/img/gallery/6.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                      <img src="./assets/img/gallery/2.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover gallery-item">
                     </div>
                     <div class="grid-item">
-                      <img src="./assets/img/gallery/3.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                      <img src="./assets/img/gallery/6.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover gallery-item">
                     </div>
-                    <div class="grid-item grid-item-1-3">
-                      <img src="./assets/img/gallery/8.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                    <div class="grid-item">
+                      <img src="./assets/img/gallery/3.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover gallery-item">
                     </div>
-                    <div class="grid-item grid-item-1-3">
-                      <img src="./assets/img/gallery/7.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
-                    </div>
-                    <div class="grid-item grid-item-1-3">
-                      <img src="./assets/img/gallery/9.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
-                    </div>
+                </div>
+                <div class="grid-layout grid-layout-3column">
+                  <div class="grid-item">
+                    <img src="./assets/img/gallery/8.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover gallery-item">
+                  </div>
+                  <div class="grid-item">
+                    <img src="./assets/img/gallery/7.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover gallery-item">
+                  </div>
+                  <div class="grid-item">
+                    <img src="./assets/img/gallery/9.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover gallery-item">
+                  </div>
                 </div>
                 </div>
               </div>
@@ -468,23 +521,6 @@
       </div>
       <div class="footer-year text-center mt-5">© 2020 BNI BSL2</div>
     </footer>
-
-    <div class="modal fade modal-gallery" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            div
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Script -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -502,14 +538,22 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/modules/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
       $(document).ready(function () {
-        $(".grid").masonry({
-          // options
-          itemSelector: ".grid-item",
-          columnWidth: 200,
+        // Modal Gallery
+        $('.gallery-item').on("click", function(){
+          $('#galleryModal').modal('show');
+        });
+
+        $(".image-carousel").owlCarousel({
+          nav: true,
+          items: 1,
+          dots: false,
+          navText: [
+            `<i class="fas fa-chevron-left"></i>`,
+            `<i class="fas fa-chevron-right"></i>`,
+          ],
         });
       });
     </script>

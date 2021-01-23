@@ -40,6 +40,100 @@ i<!DOCTYPE html>
     />
   </head>
   <body>
+    <!-- Modal Dialog -->
+    <div
+      class="modal fade modal-gallery"
+      id="galleryModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="galleryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="gallery-modal-title mb-3">Gallery Foto BNI BSL2</h2>
+
+            <div class="owl-carousel image-carousel">
+              <div class="item">
+                <img
+                  src="./assets/img/gallery/slide-1.jpg"
+                  alt=""
+                  class="w-100"
+                />
+                <p class="description mt-3">
+                  Lorem Ipsum Anim tempor adipisicing mollit irure commodo
+                  nostrud irure. Eiusmod duis consequat excepteur ullamco do
+                  magna ullamco excepteur Lorem laboris veniam fugiat Lorem
+                  Ipsum Anim tempor adipisicing mollit irure commodo nostrud
+                  irure. Eiusmod duis consequat excepteur ullamco do magna
+                  ullamco excepteur Lorem laboris veniam fugiat .
+                </p>
+              </div>
+              <div class="item">
+                <img
+                  src="./assets/img/sinergi/gallery.jpg"
+                  alt=""
+                  class="w-100"
+                />
+                <p class="description mt-3">
+                  Lorem Ipsum Anim tempor adipisicing mollit irure commodo
+                  nostrud irure. Eiusmod duis consequat excepteur ullamco do
+                  magna ullamco excepteur Lorem laboris veniam fugiat Lorem
+                  Ipsum Anim tempor adipisicing mollit irure commodo nostrud
+                  irure. Eiusmod duis consequat excepteur ullamco do magna
+                  ullamco excepteur Lorem laboris veniam fugiat .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="grid-layout grid-layout-3column mt-3">
+              <div class="grid-item row-span-2">
+                <img
+                  src="./assets/img/gallery/image 47.jpg"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./assets/img/gallery/image 49.jpg"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./assets/img/gallery/image 50.jpg"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./assets/img/gallery/image 51.jpg"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./assets/img/gallery/image 52.jpg"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+            </div>
+            <div class="text-center w-100">
+              <a href="#" class="btn btn-primary btn-lg">Tampilkan Semuanya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Dialog -->
+
     <!-- Header -->
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-3">
@@ -193,7 +287,7 @@ i<!DOCTYPE html>
                     role="tabpanel"
                     aria-labelledby="pills-home-tab"
                   >
-                    <div class="owl-carousel" id="image-carousel">
+                    <div class="owl-carousel image-carousel">
                       <div class="item">
                         <img
                           src="./assets/img/sinergi/gallery.jpg"
@@ -216,11 +310,22 @@ i<!DOCTYPE html>
                     role="tabpanel"
                     aria-labelledby="pills-profile-tab"
                   >
-                    <img
-                      src="./assets/img/sinergi/skema.jpg"
-                      alt=""
-                      class="w-100"
-                    />
+                    <div class="owl-carousel image-carousel">
+                      <div class="item">
+                        <img
+                          src="./assets/img/sinergi/skema.jpg"
+                          alt=""
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="./assets/img/photo-event/image 41.jpg"
+                          alt=""
+                          class="w-100"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -414,7 +519,7 @@ i<!DOCTYPE html>
         });
         // End List Company Carousel
 
-        $("#image-carousel").owlCarousel({
+        $(".image-carousel").owlCarousel({
           nav: true,
           items: 1,
           navText: [

@@ -1,6 +1,132 @@
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #353535;
+  overflow-x: hidden;
+  min-height: 100vh;
+  padding: 0 !important;
+}
+
+body {
+  margin-top: 60px;
+}
+
+footer#footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 120px;
+  padding: 70px 0 0 0;
+}
+
+footer#footer .waves {
+  position: absolute;
+  left: 0;
+  top: -85px;
+  width: 1437px;
+}
+
+@media (min-width: 1200px) {
+  footer#footer .waves {
+    width: 100%;
+    top: calc(0px - 7.5vw);
+  }
+}
+
+footer#footer h5 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+footer#footer ul li {
+  margin-bottom: 0.25rem;
+}
+
+footer#footer .footer-year {
+  background-color: #e4521c;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  position: relative;
+  bottom: 0;
+}
+
+header .navbar {
+  padding-right: 0 !important;
+}
+
+header .navbar .navbar-nav .nav-item {
+  font-weight: 600;
+  color: #005e6a;
+}
+
+@media (min-width: 992px) {
+  header .navbar .navbar-nav .nav-item {
+    margin-left: 48px;
+  }
+}
+
+header .navbar .navbar-nav .nav-item.active {
+  border-bottom: 3px solid #f15a23;
+}
+
+header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 0;
+  z-index: 9;
+  border: none;
+}
+
+@media (min-width: 992px) {
+  header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
+    top: 60px;
+    right: 0;
+    left: unset;
+  }
+}
+
+header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:focus {
+  background-color: inherit;
+}
+
+header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0;
+}
+
+header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:last-child {
+  border-bottom-left-radius: 30px;
+}
+
+header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu::after {
+  position: absolute;
+  z-index: -1;
+  top: 30px;
+  right: 0;
+  display: inline-block;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #f15a23;
+  border-left: 12px solid transparent;
+  content: "";
+}
+
+@media (min-width: 992px) {
+  header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu::after {
+    top: -16px;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid #f15a23;
+    border-left: 16px solid transparent;
+  }
+}
+
+header .navbar .navbar-nav .dropdown-item {
+  font-weight: 600;
+}
+
 #klaster-header {
   height: 221px;
-  background-color: #005E6A;
+  background-color: #005e6a;
   margin-top: 25px;
   color: #fff;
 }
@@ -28,7 +154,7 @@
 }
 
 #klaster-map .map {
-  background-color: #A9A9A9;
+  background-color: #a9a9a9;
   height: 475px;
 }
 
@@ -37,13 +163,13 @@
 }
 
 #klaster-map .map-list .title-list {
-  color: #A9A9A9;
+  color: #a9a9a9;
 }
 
 #klaster-map .map-list .list {
   list-style: none;
   font-size: 16px;
-  color: #005E6A;
+  color: #005e6a;
   font-weight: 600;
   overflow: scroll;
   overflow-x: hidden;
@@ -59,13 +185,13 @@
 #klaster h2 {
   font-size: 36px;
   font-weight: bold;
-  color: #005E6A;
+  color: #005e6a;
 }
 
 #klaster .hr-line {
   height: 6px;
   width: 66px;
-  background-color: #F15A23;
+  background-color: #f15a23;
   position: absolute;
 }
 
@@ -87,7 +213,7 @@
 #klaster .klaster-card .card-description .card-title {
   font-size: 16px;
   font-weight: bold;
-  color: #005E6A;
+  color: #005e6a;
 }
 
 #klaster .klaster-card .card-description .card-desc {

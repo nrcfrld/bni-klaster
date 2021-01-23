@@ -193,7 +193,7 @@ i<!DOCTYPE html>
                     role="tabpanel"
                     aria-labelledby="pills-home-tab"
                   >
-                    <div class="owl-carousel" id="image-carousel">
+                    <div class="owl-carousel image-carousel">
                       <div class="item">
                         <img
                           src="./assets/img/sinergi/gallery.jpg"
@@ -216,11 +216,22 @@ i<!DOCTYPE html>
                     role="tabpanel"
                     aria-labelledby="pills-profile-tab"
                   >
-                    <img
-                      src="./assets/img/sinergi/skema.jpg"
-                      alt=""
-                      class="w-100"
-                    />
+                    <div class="owl-carousel image-carousel">
+                      <div class="item">
+                        <img
+                          src="./assets/img/sinergi/skema.jpg"
+                          alt=""
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="item">
+                        <img
+                          src="./assets/img/photo-event/image 41.jpg"
+                          alt=""
+                          class="w-100"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -414,7 +425,7 @@ i<!DOCTYPE html>
         });
         // End List Company Carousel
 
-        $("#image-carousel").owlCarousel({
+        $(".image-carousel").owlCarousel({
           nav: true,
           items: 1,
           navText: [

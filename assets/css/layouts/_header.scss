@@ -1,66 +1,69 @@
 header {
   // Navbar
-  .navbar-nav {
-    .nav-item {
-      font-weight: 600;
-      color: $second-primary-color;
-
-      @include medium {
-        margin-left: 48px;
-      }
-
-      &.active {
-        border-bottom: 3px solid $primary-color;
-      }
-
-      &.dropdown .dropdown-menu {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 30px;
-        border-top-right-radius: 0;
-        z-index: 9;
-        border: none;
+  .navbar {
+    padding-right: 0 !important;
+    .navbar-nav {
+      .nav-item {
+        font-weight: 600;
+        color: $second-primary-color;
 
         @include medium {
-          top: 60px;
-          right: 0;
-          left: unset;
+          margin-left: 48px;
         }
 
-        .dropdown-item:focus {
-          background-color: inherit;
+        &.active {
+          border-bottom: 3px solid $primary-color;
         }
 
-        .dropdown-item:nth-child(1) {
+        &.dropdown .dropdown-menu {
           border-top-left-radius: 10px;
-          border-top-right-radius: 0;
-        }
-
-        .dropdown-item:last-child {
           border-bottom-left-radius: 30px;
-        }
+          border-top-right-radius: 0;
+          z-index: 9;
+          border: none;
 
-        &::after {
-          position: absolute;
-          z-index: -1;
-          top: 30px;
           @include medium {
-            top: -16px;
-            border-right: 16px solid transparent;
-            border-bottom: 16px solid $primary-color;
-            border-left: 16px solid transparent;
+            top: 60px;
+            right: 0;
+            left: unset;
           }
-          right: 0;
-          display: inline-block;
-          border-right: 12px solid transparent;
-          border-bottom: 12px solid $primary-color;
-          border-left: 12px solid transparent;
-          content: "";
+
+          .dropdown-item:focus {
+            background-color: inherit;
+          }
+
+          .dropdown-item:nth-child(1) {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 0;
+          }
+
+          .dropdown-item:last-child {
+            border-bottom-left-radius: 30px;
+          }
+
+          &::after {
+            position: absolute;
+            z-index: -1;
+            top: 30px;
+            @include medium {
+              top: -16px;
+              border-right: 16px solid transparent;
+              border-bottom: 16px solid $primary-color;
+              border-left: 16px solid transparent;
+            }
+            right: 0;
+            display: inline-block;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid $primary-color;
+            border-left: 12px solid transparent;
+            content: "";
+          }
         }
       }
-    }
 
-    .dropdown-item {
-      font-weight: 600;
+      .dropdown-item {
+        font-weight: 600;
+      }
     }
   }
 }

@@ -1,4 +1,8 @@
-@import "../main";
+@import "../base/variables";
+@import "../base/mixins";
+@import "../base/global";
+@import "../layouts/footer";
+@import "../layouts/header";
 @import "../components/buttons";
 @import "../components/heading-section";
 @import "../components/_scroll_top_button";

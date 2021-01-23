@@ -1,5 +1,39 @@
 @import "./base/variables";
 @import "./base/mixins";
 @import "./base/global";
-@import "./layouts/footer";
-@import "./layouts/header";
+
+.text-second-primary-color {
+  color: $second-primary-color !important;
+}
+
+.text-primary {
+  color: $primary-color !important;
+}
+
+.bg-primary-color {
+  background-color: $primary-color;
+}
+
+.bg-second-primary-color {
+  background-color: $second-primary-color;
+}
+
+.bg-primary-dark-color {
+  background-color: $primary-color;
+}
+
+.bg-primary-dark-color-hover:hover {
+  background-color: $primary-dark-color;
+}
+
+.font-weight-semibold {
+  font-weight: 600;
+}
+
+.h-24px {
+  height: 24px;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
