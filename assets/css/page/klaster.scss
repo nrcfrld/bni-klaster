@@ -1,8 +1,13 @@
-@import "../base/variables";
-@import "../base/mixins";
-@import "../base/global";
-@import "../layouts/footer";
-@import "../layouts/header";
+@import "../main";
+@import "../components/buttons";
+@import "../components/heading-section";
+@import "../components/photo-event";
+@import "../components/_scroll_top_button";
+@import "../components/custom-dropdown";
+
+main{
+    padding-bottom: 70px;
+}
 
 #klaster-header {
   height: 221px;
