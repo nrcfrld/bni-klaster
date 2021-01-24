@@ -1,0 +1,22 @@
+.pagination.main-pagination {
+  .next a,
+  .prev a {
+    &.disabled {
+      background-color: none;
+      pointer-events: none;
+    }
+    background-color: #f15a23;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+  .page-item {
+    .page-link.page-link-circle {
+      padding: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+  }
+}

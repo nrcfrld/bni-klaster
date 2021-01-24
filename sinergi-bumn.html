@@ -40,9 +40,9 @@ i<!DOCTYPE html>
     />
   </head>
   <body>
-    <!-- Modal Dialog -->
+    <!-- Modal Gallery -->
     <div
-      class="modal fade modal-gallery"
+      class="modal fade modal-gallery modal-custom"
       id="galleryModal"
       tabindex="-1"
       role="dialog"
@@ -50,44 +50,56 @@ i<!DOCTYPE html>
       aria-hidden="true"
     >
       <div class="modal-dialog modal-xl" role="document">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <i class="fas fa-times"></i>
+        </button>
         <div class="modal-content">
-          <div class="modal-body">
-            <h2 class="gallery-modal-title mb-3">Gallery Foto BNI BSL2</h2>
+          <div class="modal-body text-right">
+            <button
+              type="button"
+              class="text-dark bg-white border-0 d-inline-block ml-auto d-md-none"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="d-flex mb-5 align-items-center flex-column flex-md-row">
+              <img src="./assets/img/company/1.png" alt="" height="75" />
 
-            <div class="owl-carousel image-carousel">
+              <span class="font-weight-bold ml-3 text-uppercase font-size-36px"
+                >HARA</span
+              >
+              <div class="credit ml-md-auto d-flex flex-column">
+                <span class="text-sm text-md-right">Kredit tersalurkan</span>
+                <span class="text-sm font-weight-bold text-md-right text-center"
+                  >80%</span
+                >
+              </div>
+            </div>
+
+            <div class="owl-carousel image-carousel image-carousel-2">
               <div class="item">
                 <img
                   src="./assets/img/gallery/slide-1.jpg"
                   alt=""
-                  class="w-100"
+                  class="w-75 mx-auto"
                 />
-                <p class="description mt-3">
-                  Lorem Ipsum Anim tempor adipisicing mollit irure commodo
-                  nostrud irure. Eiusmod duis consequat excepteur ullamco do
-                  magna ullamco excepteur Lorem laboris veniam fugiat Lorem
-                  Ipsum Anim tempor adipisicing mollit irure commodo nostrud
-                  irure. Eiusmod duis consequat excepteur ullamco do magna
-                  ullamco excepteur Lorem laboris veniam fugiat .
-                </p>
               </div>
               <div class="item">
                 <img
                   src="./assets/img/sinergi/gallery.jpg"
                   alt=""
-                  class="w-100"
+                  class="w-75 mx-auto"
                 />
-                <p class="description mt-3">
-                  Lorem Ipsum Anim tempor adipisicing mollit irure commodo
-                  nostrud irure. Eiusmod duis consequat excepteur ullamco do
-                  magna ullamco excepteur Lorem laboris veniam fugiat Lorem
-                  Ipsum Anim tempor adipisicing mollit irure commodo nostrud
-                  irure. Eiusmod duis consequat excepteur ullamco do magna
-                  ullamco excepteur Lorem laboris veniam fugiat .
-                </p>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer mt-5">
             <div class="grid-layout grid-layout-3column mt-3">
               <div class="grid-item row-span-2">
                 <img
@@ -132,7 +144,7 @@ i<!DOCTYPE html>
         </div>
       </div>
     </div>
-    <!-- End Modal Dialog -->
+    <!-- End Modal -->
 
     <!-- Header -->
     <header>
@@ -292,14 +304,14 @@ i<!DOCTYPE html>
                         <img
                           src="./assets/img/sinergi/gallery.jpg"
                           alt=""
-                          class="w-100"
+                          class="w-100 gallery-item"
                         />
                       </div>
                       <div class="item">
                         <img
                           src="./assets/img/photo-event/image 41.jpg"
                           alt=""
-                          class="w-100"
+                          class="w-100 gallery-item"
                         />
                       </div>
                     </div>
@@ -522,10 +534,15 @@ i<!DOCTYPE html>
         $(".image-carousel").owlCarousel({
           nav: true,
           items: 1,
+          dots: false,
           navText: [
             `<i class="fas fa-chevron-left"></i>`,
             `<i class="fas fa-chevron-right"></i>`,
           ],
+        });
+        // Modal Gallery
+        $(".gallery-item").on("click", function () {
+          $("#galleryModal").modal("show");
         });
       });
     </script>

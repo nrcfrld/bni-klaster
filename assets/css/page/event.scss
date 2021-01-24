@@ -1,68 +1,174 @@
-@import "../main";
+@import "../base/mixins";
+@import "../base/variables";
+@import "../base/global";
 @import "../components/buttons";
 @import "../components/heading-section";
 @import "../components/photo-event";
 @import "../components/_scroll_top_button";
 @import "../components/custom-dropdown";
+@import "../components/pagination";
+@import "../layouts/header";
+@import "../layouts/footer";
 
-main {
-    padding-top: 70px;
-    #hero-event {
-        height: 482px;
-        .hero-content {
-        background-color: grey;
-            .hero-text{
-                display: flex;
-                align-items: center;
-                font-size: 60px;
-                font-weight: 700;
-                color:#fff;
-            }
-        }
+#hero-event {
+  margin-top: 20px;
+  height: 485px;
+  position: relative;
+
+  .hero-image-cover {
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      color: #fff;
+      font-weight: bold;
+      max-width: 462px;
+
+      @include medium {
+        font-size: 48px;
+      }
+
+      @include large {
+        font-size: 64px;
+      }
     }
-    
-    #search-event {
-        .box-panel {
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-            border-radius: 20px;
-            padding: 28px 16px;
-            margin-top: -70px;
-            background: $primary-color;
-            z-index: 9;
-            position: relative;
-            text-align: center;
-        
-            &-item {
-            height: 100%;
-            padding: 24px;
+  }
+}
 
-            &.right-left-bordered {
-                @include large {
-                    border-right: 1px solid #c4c4c4;
-                    border-left: 1px solid #c4c4c4;
-                }
-                }
+#search-event {
+  margin-bottom: 100px;
+  .box-panel {
+    margin-top: -100px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 0 24px;
+    background: $primary-color;
+    z-index: 9;
+    position: relative;
 
-            &-heading {
-                font-size: 14px;
-                color: #fff;
-                color:#fff;
-            }
-            }
+    &-item {
+      height: 100%;
+      padding-bottom: 32px;
+
+      &.right-bordered {
+        @include large {
+          border-right: 1px solid #fff;
+          padding-right: 36px;
+          margin-right: 16px;
         }
-        .search-button{
-            position: relative;
-            top: 20px;
-            right: 20px;
-            color: $primary-color;
-            background-color: #fff;
-            width: 162px;
-            height: 57px;
-            border-radius: 10px;
-            border-style: none;
-            font-size: 18px;
-            font-weight: 600;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-        }
+      }
+
+      &-heading {
+        font-size: 14px;
+        color: #fff;
+      }
     }
+  }
+  .search-button {
+    position: relative;
+    top: 25px;
+    right: 20px;
+    color: $primary-color;
+    background-color: #fff;
+    width: 162px;
+    height: 57px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      background-color: #f3f3f3;
+    }
+  }
+}
+
+.card.card-event {
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border: none;
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 12px;
+    color: #979494;
+  }
+
+  .card-event-branch {
+    color: #979494;
+    font-size: 14px;
+  }
+
+  .card-event-month {
+    font-size: 16px;
+  }
+
+  .card-event-date {
+    font-size: 24px;
+  }
+
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+.mod-select {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: white;
+  border-bottom: 1px solid #fff;
+  appearance: none;
+
+  &:focus {
+    background: none;
+    box-shadow: none;
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  display: none !important;
+}
+
+.select2-container--default .select2-selection--single {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  color: #fff;
 }

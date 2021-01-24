@@ -1,6 +1,13 @@
 @import "../base/variables";
 
 .dropdown.custom-dropdown {
+  &.light-toggle {
+    .dropdown-toggle {
+      background-color: #e7ecfc !important;
+      border: none;
+    }
+  }
+
   .dropdown-menu {
     border-bottom-right-radius: 30px;
     padding: 0;

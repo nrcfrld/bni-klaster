@@ -40,6 +40,171 @@ i<!DOCTYPE html>
     />
   </head>
   <body>
+    <!-- Modal Gallery -->
+    <div
+      class="modal fade modal-gallery modal-custom"
+      id="galleryModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="galleryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-content">
+          <div class="modal-body text-right">
+            <button
+              type="button"
+              class="text-dark bg-white border-0 d-inline-block ml-auto d-md-none"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="d-flex mb-5 align-items-center flex-column flex-md-row">
+              <img src="./assets/img/company/1.png" alt="" height="75" />
+
+              <span class="font-weight-bold ml-3 text-uppercase font-size-36px"
+                >HARA</span
+              >
+              <div class="credit ml-md-auto d-flex flex-column">
+                <span class="text-sm text-md-right">Kredit tersalurkan</span>
+                <span class="text-sm font-weight-bold text-md-right text-center"
+                  >80%</span
+                >
+              </div>
+            </div>
+
+            <div class="owl-carousel image-carousel image-carousel-2">
+              <div class="item">
+                <img
+                  src="./assets/img/gallery/slide-1.jpg"
+                  alt=""
+                  class="w-75 mx-auto"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="./assets/img/sinergi/gallery.jpg"
+                  alt=""
+                  class="w-75 mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer mt-5">
+            <div class="grid-layout grid-layout-3column mt-3">
+              <div class="grid-item row-span-2">
+                <img
+                  src="./assets/img/gallery/image 47.jpg"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./assets/img/gallery/image 49.jpg"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./assets/img/gallery/image 50.jpg"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./assets/img/gallery/image 51.jpg"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./assets/img/gallery/image 52.jpg"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+            </div>
+            <div class="text-center w-100">
+              <a href="#" class="btn btn-primary btn-lg">Tampilkan Semuanya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Gallery -->
+
+    <!-- Modal Gallery -->
+    <div
+      class="modal fade modal-gallery modal-custom"
+      id="schemaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="schemaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="text-right d-md-none">
+              <button
+                type="button"
+                class="text-dark bg-white border-0 d-inline-block ml-auto"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="d-flex mb-5 align-items-center flex-column flex-md-row">
+              <img src="./assets/img/company/1.png" alt="" height="75" />
+
+              <span class="font-weight-bold ml-3 text-uppercase font-size-36px"
+                >HARA</span
+              >
+            </div>
+
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-md-10">
+                  <img src="./assets/img/sinergi/skema-2x.jpg" class="w-100" />
+                  <p class="description mt-5">
+                    Lorem Ipsum Anim tempor adipisicing mollit irure commodo
+                    nostrud irure. Eiusmod duis consequat excepteur ullamco do
+                    magna ullamco excepteur Lorem laboris veniam fugiat Lorem
+                    Ipsum Anim tempor adipisicing mollit irure commodo nostrud
+                    irure. Eiusmod duis consequat excepteur ullamco do magna
+                    ullamco excepteur Lorem laboris veniam fugiat .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Gallery -->
+
     <!-- Header -->
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-3">
@@ -198,14 +363,14 @@ i<!DOCTYPE html>
                         <img
                           src="./assets/img/sinergi/gallery.jpg"
                           alt=""
-                          class="w-100"
+                          class="w-100 gallery-item"
                         />
                       </div>
                       <div class="item">
                         <img
                           src="./assets/img/photo-event/image 41.jpg"
                           alt=""
-                          class="w-100"
+                          class="w-100 gallery-item"
                         />
                       </div>
                     </div>
@@ -221,14 +386,14 @@ i<!DOCTYPE html>
                         <img
                           src="./assets/img/sinergi/skema.jpg"
                           alt=""
-                          class="w-100"
+                          class="w-100 schema-item"
                         />
                       </div>
                       <div class="item">
                         <img
                           src="./assets/img/photo-event/image 41.jpg"
                           alt=""
-                          class="w-100"
+                          class="w-100 schema-item"
                         />
                       </div>
                     </div>
@@ -432,6 +597,16 @@ i<!DOCTYPE html>
             `<i class="fas fa-chevron-left"></i>`,
             `<i class="fas fa-chevron-right"></i>`,
           ],
+        });
+
+        // Trigger Modal Gallery
+        $(".gallery-item").on("click", function () {
+          $("#galleryModal").modal("show");
+        });
+
+        // Trigger Modal Skema
+        $(".schema-item").on("click", function () {
+          $("#schemaModal").modal("show");
         });
       });
     </script>
