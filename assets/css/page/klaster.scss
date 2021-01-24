@@ -1,7 +1,10 @@
-$primary-color: #F15A23;
-$primary-dark-color: #E4521C;
-$second-primary-color: #005E6A;
-$dark-color: #353535;
+@import "../main";
+@import "../components/buttons";
+@import "../components/heading-section";
+@import "../components/photo-event";
+@import "../components/_scroll_top_button";
+@import "../components/custom-dropdown";
+
 
 #klaster-header{
     height: 221px;
