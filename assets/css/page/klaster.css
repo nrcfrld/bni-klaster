@@ -499,4 +499,8 @@ main {
 #klaster .klaster-card .card-description .card-desc {
   font-size: 12px;
 }
+
+#klaster .klaster-card:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=klaster.css.map */

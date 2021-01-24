@@ -81,20 +81,23 @@ main{
         width: 262px;
         height: 252px;
         img {
-        height: 171px;
-        width: 262px;
+            height: 171px;
+            width: 262px;
         }
         .card-description {
-        width: 262px;
-        height: 75px;
-        .card-title {
-            font-size: 16px;
-            font-weight: bold;
-            color: $second-primary-color;
+            width: 262px;
+            height: 75px;
+            .card-title {
+                font-size: 16px;
+                font-weight: bold;
+                color: $second-primary-color;
+            }
+            .card-desc {
+                font-size: 12px;
+            }
         }
-        .card-desc {
-            font-size: 12px;
-        }
+        &:hover{
+            cursor: pointer;
         }
     }
 }
