@@ -4,10 +4,21 @@
     "sources": [
         "klaster.scss",
         "../base/_variables.scss",
-        "../base/_mixins.scss",
         "../base/_global.scss",
+        "../base/_mixins.scss",
         "../layouts/_footer.scss",
-        "../layouts/_header.scss"
+        "../layouts/_header.scss",
+        "../components/_buttons.scss",
+        "../base/_variables.scss",
+        "../components/_heading-section.scss",
+        "../base/_variables.scss",
+        "../components/_photo-event.scss",
+        "../base/_variables.scss",
+        "../components/_scroll_top_button.scss",
+        "../components/_custom-dropdown.scss",
+        "../base/_variables.scss",
+        "../components/_masonry_grid.scss",
+        "../components/_modal_dialog.scss"
     ],
     "names": [],
     "file": "klaster.css"
