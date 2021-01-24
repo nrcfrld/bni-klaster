@@ -239,6 +239,10 @@ header .navbar-nav .dropdown-item {
   display: none;
 }
 
+main {
+  padding-bottom: 70px;
+}
+
 #klaster-header {
   height: 221px;
   background-color: #005e6a;
