@@ -44,26 +44,37 @@ main{
 #klaster-map {
     .map {
         background-color: #a9a9a9;
-        height: 475px;
+        height: 478px;
     }
     .map-list {
+        height: 459px;
         font-size: 16px;
+        width: 100%;
+        
         .title-list {
-        color: #a9a9a9;
+            color: #a9a9a9;
+            font-weight: 700;
         }
 
         .list {
-        list-style: none;
-        font-size: 16px;
-        color: $second-primary-color;
-        font-weight: 600;
-        overflow: scroll;
-        overflow-x: hidden;
-        align-items: center;
+            list-style: none;
+            font-size: 16px;
+            color: $second-primary-color;
+            font-weight: 600;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            align-items: center;
+            
+            
+                .icon-square{
+                    width: 30px;
+                    height: 28px;
+                    border-radius: 5px;
+                }
+            
         }
     }
 }
-
 #klaster {
     height: 652px;
     h2 {

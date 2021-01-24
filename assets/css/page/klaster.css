@@ -435,15 +435,18 @@ main {
 
 #klaster-map .map {
   background-color: #a9a9a9;
-  height: 475px;
+  height: 478px;
 }
 
 #klaster-map .map-list {
+  height: 459px;
   font-size: 16px;
+  width: 100%;
 }
 
 #klaster-map .map-list .title-list {
   color: #a9a9a9;
+  font-weight: 700;
 }
 
 #klaster-map .map-list .list {
@@ -451,11 +454,17 @@ main {
   font-size: 16px;
   color: #005e6a;
   font-weight: 600;
-  overflow: scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#klaster-map .map-list .list .icon-square {
+  width: 30px;
+  height: 28px;
+  border-radius: 5px;
 }
 
 #klaster {
