@@ -2,8 +2,10 @@
   .next a,
   .prev a {
     &.disabled {
-      background-color: none;
+      background-color: unset;
       pointer-events: none;
+      color: #979494;
+      border-color: #979494;
     }
     background-color: #f15a23;
     color: white;
@@ -17,6 +19,11 @@
       width: 16px;
       height: 16px;
       border-radius: 50%;
+      background-color: #979494;
+
+      &.active {
+        background-color: #f15a23;
+      }
     }
   }
 }

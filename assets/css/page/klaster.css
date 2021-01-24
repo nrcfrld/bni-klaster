@@ -209,6 +209,11 @@ header .navbar .navbar-nav .dropdown-item {
   display: none;
 }
 
+.dropdown.custom-dropdown.light-toggle .dropdown-toggle {
+  background-color: #e7ecfc !important;
+  border: none;
+}
+
 .dropdown.custom-dropdown .dropdown-menu {
   border-bottom-right-radius: 30px;
   padding: 0;
@@ -439,7 +444,6 @@ main {
 }
 
 #klaster-map .map-list {
-  height: 459px;
   font-size: 16px;
   width: 100%;
 }
@@ -456,9 +460,6 @@ main {
   font-weight: 600;
   overflow-y: scroll;
   overflow-x: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #klaster-map .map-list .list .icon-square {
