@@ -1,94 +1,100 @@
-@import "../main";
+@import "../base/variables";
+@import "../base/global";
+@import "../base/mixins";
+@import "../layouts/footer";
+@import "../layouts/header";
 @import "../components/buttons";
 @import "../components/heading-section";
 @import "../components/photo-event";
 @import "../components/_scroll_top_button";
 @import "../components/custom-dropdown";
+@import "../components/masonry_grid";
+@import "../components/modal_dialog";
 
 main{
     padding-bottom: 70px;
 }
 
 #klaster-header {
-  height: 221px;
-  background-color: $second-primary-color;
-  margin-top: 25px;
-  color: #fff;
+    height: 221px;
+    background-color: $second-primary-color;
+    margin-top: 25px;
+    color: #fff;
 
-  .eclipse {
-    float: right;
-    position: relative;
-    top: 20px;
-    left: 20px;
-  }
-  .klaster-box {
-    padding-top: 64px;
-  }
-  .title {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  .desc {
-    line-height: 0.5;
-    font-size: 14px;
-    font-weight: 400;
-  }
+    .eclipse {
+        float: right;
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+    .klaster-box {
+        padding-top: 64px;
+    }
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .desc {
+        line-height: 0.5;
+        font-size: 14px;
+        font-weight: 400;
+    }
 }
 
 #klaster-map {
-  .map {
-    background-color: #a9a9a9;
-    height: 475px;
-  }
-  .map-list {
-    font-size: 16px;
-    .title-list {
-      color: #a9a9a9;
+    .map {
+        background-color: #a9a9a9;
+        height: 475px;
     }
+    .map-list {
+        font-size: 16px;
+        .title-list {
+        color: #a9a9a9;
+        }
 
-    .list {
-      list-style: none;
-      font-size: 16px;
-      color: $second-primary-color;
-      font-weight: 600;
-      overflow: scroll;
-      overflow-x: hidden;
-      align-items: center;
+        .list {
+        list-style: none;
+        font-size: 16px;
+        color: $second-primary-color;
+        font-weight: 600;
+        overflow: scroll;
+        overflow-x: hidden;
+        align-items: center;
+        }
     }
-  }
 }
 
 #klaster {
-  height: 652px;
-  h2 {
-    font-size: 36px;
-    font-weight: bold;
-    color: $second-primary-color;
-  }
-  .hr-line {
-    height: 6px;
-    width: 66px;
-    background-color: $primary-color;
-    position: absolute;
-  }
-  .klaster-card {
-    width: 262px;
-    height: 252px;
-    img {
-      height: 171px;
-      width: 262px;
-    }
-    .card-description {
-      width: 262px;
-      height: 75px;
-      .card-title {
-        font-size: 16px;
+    height: 652px;
+    h2 {
+        font-size: 36px;
         font-weight: bold;
         color: $second-primary-color;
-      }
-      .card-desc {
-        font-size: 12px;
-      }
     }
-  }
+    .hr-line {
+        height: 6px;
+        width: 66px;
+        background-color: $primary-color;
+        position: absolute;
+    }
+    .klaster-card {
+        width: 262px;
+        height: 252px;
+        img {
+        height: 171px;
+        width: 262px;
+        }
+        .card-description {
+        width: 262px;
+        height: 75px;
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: $second-primary-color;
+        }
+        .card-desc {
+            font-size: 12px;
+        }
+        }
+    }
 }
