@@ -379,12 +379,12 @@ header .navbar .navbar-nav .dropdown-item {
 }
 
 .modal-custom .image-carousel .owl-nav .owl-prev {
-  left: -50px;
+  left: -80px;
   top: 50%;
 }
 
 .modal-custom .image-carousel .owl-nav .owl-next {
-  right: -50px;
+  right: -80px;
   top: 50%;
 }
 

@@ -10,112 +10,130 @@
 @import "../components/custom-dropdown";
 @import "../components/masonry_grid";
 @import "../components/modal_dialog";
-
-main{
-    padding-bottom: 70px;
-}
+@import "../components/pagination";
 
 #klaster-header {
-    height: 221px;
-    background-color: $second-primary-color;
-    margin-top: 25px;
-    color: #fff;
+  position: relative;
+  min-height: 221px;
+  background-color: $second-primary-color;
+  margin-top: 25px;
+  color: #fff;
 
-    .eclipse {
-        float: right;
-        position: relative;
-        top: 20px;
-        left: 20px;
-    }
-    .klaster-box {
-        padding-top: 64px;
-    }
-    .title {
-        font-size: 24px;
-        font-weight: 700;
-    }
-    .desc {
-        line-height: 0.5;
-        font-size: 14px;
-        font-weight: 400;
-    }
+  .eclipse {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .klaster-box {
+    padding-top: 64px;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .desc {
+    line-height: 0.5;
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 
 #klaster-map {
-    .map {
-        background-color: #a9a9a9;
-        height: 478px;
+  .map {
+    background-color: #a9a9a9;
+    height: 478px;
+  }
+  .map-list {
+    overflow-y: auto;
+    font-size: 16px;
+    width: 100%;
+    height: 300px;
+    @include large {
+      height: 478px;
     }
-    .map-list {
-        // height: 459px;
-        font-size: 16px;
-        width: 100%;
-        
-        .title-list {
-            color: #a9a9a9;
-            font-weight: 700;
+
+    .title-list {
+      color: #a9a9a9;
+      font-weight: 700;
+    }
+
+    .list {
+      list-style: none;
+      font-size: 16px;
+      color: $second-primary-color;
+      font-weight: 600;
+
+      .list-child {
+        border-top: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+        padding: 10px 2px;
+
+        &.active {
+          background-color: #ececec;
         }
 
-        .list {
-            list-style: none;
-            font-size: 16px;
-            color: $second-primary-color;
-            font-weight: 600;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            // max-height: 450px;
-            
-            
-                .icon-square{
-                    width: 30px;
-                    height: 28px;
-                    border-radius: 5px;
-                }
-            
+        &:hover {
+          cursor: pointer;
+          background-color: #ececec;
         }
+      }
+
+      .icon-square {
+        width: 30px;
+        height: 28px;
+        border-radius: 5px;
+      }
     }
+  }
 }
+
 #klaster {
-    height: 652px;
-    h2 {
-        font-size: 36px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: $second-primary-color;
+  }
+  .hr-line {
+    height: 6px;
+    width: 66px;
+    background-color: $primary-color;
+    position: absolute;
+  }
+  .klaster-card {
+    img {
+      height: 300px;
+      @include extra-small {
+        height: 230px;
+      }
+      @include medium {
+        height: 171px;
+      }
+      width: 100%;
+      object-fit: cover;
+    }
+    .icon {
+      .icon-box {
+        width: 57px;
+        height: 57px;
+        border-radius: 5px;
+      }
+    }
+    .card-description {
+      width: 262px;
+      height: 75px;
+      .card-title {
+        font-size: 16px;
         font-weight: bold;
         color: $second-primary-color;
+      }
+      .card-desc {
+        font-size: 12px;
+      }
     }
-    .hr-line {
-        height: 6px;
-        width: 66px;
-        background-color: $primary-color;
-        position: absolute;
+    &:hover {
+      cursor: pointer;
     }
-    .klaster-card {
-        width: 262px;
-        height: 252px;
-        img {
-            height: 171px;
-            width: 262px;
-        }
-        .icon {
-            .icon-box{
-                width: 57px;
-                height: 57px;
-                border-radius: 5px;
-            }
-        }
-        .card-description {
-            width: 262px;
-            height: 75px;
-            .card-title {
-                font-size: 16px;
-                font-weight: bold;
-                color: $second-primary-color;
-            }
-            .card-desc {
-                font-size: 12px;
-            }
-        }
-        &:hover{
-            cursor: pointer;
-        }
-    }
+  }
 }
