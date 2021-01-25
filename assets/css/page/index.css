@@ -471,9 +471,6 @@ header .navbar .navbar-nav .dropdown-item {
   border-radius: 16px;
   position: relative;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 30px;
 }
 
@@ -533,15 +530,14 @@ header .navbar .navbar-nav .dropdown-item {
   max-width: 230px;
   text-align: center;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-pack: center;
-  display: -ms-flexbox;
-  display: -webkit-flex;
 }
 
 #ongoing .content .card-mikro .layered img {
@@ -551,9 +547,13 @@ header .navbar .navbar-nav .dropdown-item {
 }
 
 #ongoing .content .card-mikro .layered span {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   position: absolute;
   font-weight: bold;
   z-index: 10;
+  top: 60px;
 }
 
 #ongoing .content .dots {
