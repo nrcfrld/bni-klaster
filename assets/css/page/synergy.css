@@ -185,13 +185,29 @@ header .navbar .navbar-nav .dropdown-item {
 }
 
 .modal-custom .image-carousel .owl-nav .owl-prev {
-  left: -80px;
-  top: 50%;
+  top: 65px;
+  left: 8px;
+  background: white;
+}
+
+@media (min-width: 992px) {
+  .modal-custom .image-carousel .owl-nav .owl-prev {
+    left: -80px;
+    top: 50%;
+  }
 }
 
 .modal-custom .image-carousel .owl-nav .owl-next {
-  right: -80px;
-  top: 50%;
+  top: 65px;
+  right: 8px;
+  background: white;
+}
+
+@media (min-width: 992px) {
+  .modal-custom .image-carousel .owl-nav .owl-next {
+    right: -80px;
+    top: 50%;
+  }
 }
 
 .modal-custom .image-carousel.image-carousel-2 .owl-nav .owl-prev {

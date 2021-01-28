@@ -60,13 +60,23 @@
     }
 
     .owl-nav .owl-prev {
-      left: -80px;
-      top: 50%;
+      top: 65px;
+      left: 8px;
+      background: lighten($color: $primary-color, $amount: 80);
+      @include medium {
+        left: -80px;
+        top: 50%;
+      }
     }
 
     .owl-nav .owl-next {
-      right: -80px;
-      top: 50%;
+      top: 65px;
+      right: 8px;
+      background: lighten($color: $primary-color, $amount: 80);
+      @include medium {
+        right: -80px;
+        top: 50%;
+      }
     }
 
     &.image-carousel-2 {
