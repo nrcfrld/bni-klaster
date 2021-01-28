@@ -39,6 +39,8 @@ main {
 
   img {
     cursor: pointer;
+    z-index: 2;
+    position: relative;
   }
 
   .dots {
@@ -51,6 +53,58 @@ main {
     position: absolute;
     left: 0;
     bottom: 50px;
+    z-index: 1;
+  }
+
+  .grid {
+    .grid-item,
+    .grid-sizer {
+      width: calc(50% - 7.5px);
+      @include medium {
+        width: calc(8% - 7.5px);
+      }
+    }
+
+    .grid-item {
+      height: 230px;
+      float: left;
+      background: #cccccc;
+      margin-bottom: 10px;
+
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(5),
+      &:nth-child(7),
+      &:nth-child(6) {
+        @include medium {
+          width: calc(24% - 7.5px);
+        }
+      }
+
+      &:nth-child(3) {
+        height: 470px;
+      }
+
+      &:nth-child(4) {
+        @include medium {
+          width: calc(49% - 15px);
+        }
+      }
+
+      &:nth-child(8),
+      &:nth-child(9),
+      &:nth-child(10) {
+        @include medium {
+          width: calc(32% - 7.5px);
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
   }
 }
 

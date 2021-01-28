@@ -270,8 +270,8 @@ header .navbar .navbar-nav .dropdown-item {
 
 @media (min-width: 992px) {
   .grid-layout.grid-layout-4column {
-    -ms-grid-columns: (minmax(180px, 1fr))[4];
-        grid-template-columns: repeat(4, minmax(180px, 1fr));
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
   }
 }
 
@@ -292,6 +292,11 @@ header .navbar .navbar-nav .dropdown-item {
     -ms-grid-columns: (minmax(180px, 1fr))[3];
         grid-template-columns: repeat(3, minmax(180px, 1fr));
   }
+}
+
+.grid-layout.grid-layout-3column .grid-item:nth-child(1) {
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
 }
 
 .grid-layout .grid-item:nth-child(odd) {
