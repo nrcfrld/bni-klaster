@@ -437,8 +437,6 @@ main {
 
 #gallery img {
   cursor: pointer;
-  z-index: 2;
-  position: relative;
 }
 
 #gallery .dots {
@@ -452,6 +450,11 @@ main {
   left: 0;
   bottom: 50px;
   z-index: 1;
+}
+
+#gallery .grid {
+  position: relative;
+  z-index: 9;
 }
 
 #gallery .grid .grid-item,

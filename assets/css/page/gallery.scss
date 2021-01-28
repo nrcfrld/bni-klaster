@@ -39,8 +39,6 @@ main {
 
   img {
     cursor: pointer;
-    z-index: 2;
-    position: relative;
   }
 
   .dots {
@@ -57,6 +55,8 @@ main {
   }
 
   .grid {
+    position: relative;
+    z-index: 9;
     .grid-item,
     .grid-sizer {
       width: calc(50% - 7.5px);
