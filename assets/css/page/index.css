@@ -178,13 +178,13 @@ header .navbar .navbar-nav .dropdown-item {
   position: relative;
   top: -160px;
   z-index: 3;
-  background: yellow;
 }
 
 #hero .owl-container-dots .owl-container-dots-button {
   position: absolute;
   top: 0;
   text-align: left;
+  background-color: #f0f0f0;
 }
 
 #hero .owl-container-dots .owl-container-dots-button button {
