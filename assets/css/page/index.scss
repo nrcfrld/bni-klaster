@@ -28,7 +28,6 @@
       position: absolute;
       top: 0;
       text-align: left;
-      background-color: #f0f0f0;
 
       button {
         padding: 6px;
@@ -36,6 +35,7 @@
         border: none;
         outline: none;
         margin-left: 12px;
+        background-color: #f0f0f0;
 
         &.active {
           background: $primary-color;

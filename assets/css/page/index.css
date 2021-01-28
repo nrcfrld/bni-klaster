@@ -184,7 +184,6 @@ header .navbar .navbar-nav .dropdown-item {
   position: absolute;
   top: 0;
   text-align: left;
-  background-color: #f0f0f0;
 }
 
 #hero .owl-container-dots .owl-container-dots-button button {
@@ -193,6 +192,7 @@ header .navbar .navbar-nav .dropdown-item {
   border: none;
   outline: none;
   margin-left: 12px;
+  background-color: #f0f0f0;
 }
 
 #hero .owl-container-dots .owl-container-dots-button button.active {
