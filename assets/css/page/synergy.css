@@ -473,6 +473,10 @@ body {
   border: 1px solid #f15a23;
 }
 
+#carousel-sinergy .company.active {
+  border: 1px solid #f15a23;
+}
+
 #main-sinergy {
   background-color: #e8ecf1;
   margin-bottom: 50px;
