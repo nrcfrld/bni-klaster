@@ -136,4 +136,40 @@
       cursor: pointer;
     }
   }
+
+  .dots-container {
+    margin: 0 16px;
+  }
+
+  .owl-dot {
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #979494;
+    border: none;
+    margin: 0 12px;
+
+    &.active {
+      background-color: #f15a23;
+    }
+  }
+
+  .owl-prev,
+  .owl-next {
+    background-color: #f15a23;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+    padding: 7px 12px;
+
+    &.disabled {
+      background-color: unset;
+      pointer-events: none;
+      color: #979494;
+      border: 1px solid #979494;
+      border-color: #979494;
+    }
+  }
 }

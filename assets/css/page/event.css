@@ -458,4 +458,45 @@ footer#footer .footer-year {
 .select2-selection__rendered {
   color: #fff;
 }
+
+.event-carousel .owl-stage-outer {
+  padding-bottom: 32px;
+}
+
+.dots-container {
+  margin: 0 16px;
+}
+
+.owl-dot {
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #979494;
+  border: none;
+  margin: 0 12px;
+}
+
+.owl-dot.active {
+  background-color: #f15a23;
+}
+
+.owl-prev,
+.owl-next {
+  background-color: #f15a23;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  border: none;
+  padding: 7px 12px;
+}
+
+.owl-prev.disabled,
+.owl-next.disabled {
+  background-color: unset;
+  pointer-events: none;
+  color: #979494;
+  border: 1px solid #979494;
+  border-color: #979494;
+}
 /*# sourceMappingURL=event.css.map */

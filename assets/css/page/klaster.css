@@ -595,4 +595,41 @@ body.modal-open {
 #klaster .klaster-card:hover {
   cursor: pointer;
 }
+
+#klaster .dots-container {
+  margin: 0 16px;
+}
+
+#klaster .owl-dot {
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #979494;
+  border: none;
+  margin: 0 12px;
+}
+
+#klaster .owl-dot.active {
+  background-color: #f15a23;
+}
+
+#klaster .owl-prev,
+#klaster .owl-next {
+  background-color: #f15a23;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  border: none;
+  padding: 7px 12px;
+}
+
+#klaster .owl-prev.disabled,
+#klaster .owl-next.disabled {
+  background-color: unset;
+  pointer-events: none;
+  color: #979494;
+  border: 1px solid #979494;
+  border-color: #979494;
+}
 /*# sourceMappingURL=klaster.css.map */
