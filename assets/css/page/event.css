@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 85px;
 }
 
 .btn.btn-primary, .btn.btn-primary:active {
@@ -274,7 +274,6 @@ footer#footer .footer-year {
 }
 
 #hero-event {
-  margin-top: 20px;
   height: 485px;
   position: relative;
 }
