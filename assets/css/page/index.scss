@@ -9,397 +9,386 @@
 
 // Hero Section
 #hero {
+	.owl-carousel .owl-nav {
+		overflow: hidden;
+		height: 0px;
+		margin-top: 0;
+	}
 
-  .owl-carousel .owl-nav {
-    overflow: hidden;
-    height: 0px;
-    margin-top: 0;
-  }
+	.owl-container-dots {
+		position: relative;
+		top: -160px;
+		z-index: 3;
+		.owl-container-dots-button {
+			position: absolute;
+			top: 0;
+			text-align: left;
 
-  .owl-container-dots {
-    position: relative;
-    top: -160px;
-    z-index: 3;
-    .owl-container-dots-button {
-      position: absolute;
-      top: 0;
-      text-align: left;
+			button {
+				padding: 6px;
+				border-radius: 50%;
+				border: none;
+				outline: none;
+				margin-left: 12px;
+				background-color: #f0f0f0;
 
-      button {
-        padding: 6px;
-        border-radius: 50%;
-        border: none;
-        outline: none;
-        margin-left: 12px;
-        background-color: #f0f0f0;
+				&.active {
+					background: $primary-color;
+				}
+			}
+		}
+	}
 
-        &.active {
-          background: $primary-color;
-        }
-      }
-    }
-  }
+	.owl-theme .owl-dots .owl-dot.active span,
+	.owl-theme .owl-dots .owl-dot:hover span {
+		background: #5110e9;
+	}
 
-  .owl-theme .owl-dots .owl-dot.active span,
-  .owl-theme .owl-dots .owl-dot:hover span {
-    background: #5110e9;
-  }
+	.owl-carousel .item {
+		text-align: center;
+	}
 
-  .owl-carousel .item {
-    text-align: center;
-  }
+	.owl-carousel .nav-button {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		margin-top: -25px;
+		background: transparent;
 
-  .owl-carousel .nav-button {
-    cursor: pointer;
-    position: absolute;
-    top: calc(50% - 50px);
+		svg {
+			width: 30px;
+			height: 30px;
 
-    // @include large {
-    //   top: calc(50% - 50px);
-    // }
-    background: transparent;
-  }
+			@include medium {
+				width: 36px;
+				height: 36px;
+			}
+		}
+	}
 
-  .owl-carousel .owl-prev.disabled,
-  .owl-carousel .owl-next.disabled {
-    pointer-events: none;
-    opacity: 0.25;
-  }
+	.owl-carousel .owl-prev.disabled,
+	.owl-carousel .owl-next.disabled {
+		pointer-events: none;
+		opacity: 0.25;
+	}
 
-  .owl-carousel .owl-prev {
-    // display: none;
-    left: 20px;
-    @include medium {
-      display: inline-block;
-    }
-  }
+	.owl-carousel .owl-prev {
+		// display: none;
+		left: 20px;
+		@include medium {
+			display: inline-block;
+		}
+	}
 
-  .owl-carousel .owl-next {
-    right: 20px;
-  }
+	.owl-carousel .owl-next {
+		right: 20px;
+	}
 
-  .owl-carousel-item {
-    position: relative;
-    z-index: 1;
-    width: 100%;
+	.owl-carousel-item {
+		position: relative;
+		z-index: 1;
+		width: 100%;
 
-    .caption {
-      position: absolute;
-      z-index: 3;
-      top: 0;
-      color: #fff;
-      font-weight: 600;
-      display: block;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
+		.caption {
+			position: absolute;
+			z-index: 3;
+			top: 0;
+			color: #fff;
+			font-weight: 600;
+			display: block;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
 
-      h3 {
-        font-size: 48px;
-      }
+			h3 {
+				font-size: 48px;
+			}
 
-      p {
-        font-size: 14px;
-        margin-top: 36px;
-        margin-bottom: 24px;
-        line-height: 24px;
-        @include medium {
-          max-width: 618px;
-        }
-      }
-    }
+			p {
+				font-size: 14px;
+				margin-top: 36px;
+				margin-bottom: 24px;
+				line-height: 24px;
+				@include medium {
+					max-width: 618px;
+				}
+			}
+		}
 
-    &::after {
-      position: absolute;
-      display: block;
-      top: 0;
-      left: -1px;
-      width: 100%;
-      height: 100%;
-      content: "";
-      background: linear-gradient(
-        272.1deg,
-        #000000 -21.24%,
-        rgba(196, 196, 196, 0) 106.98%
-      );
-      transform: matrix(-1, 0, 0, 1, 0, 0);
-      z-index: 2;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
-  }
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			display: block;
+		}
+	}
 }
 
 #info-panel {
-  .box-panel {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    margin-top: 25px;
-    background: white;
-    z-index: 9;
-    position: relative;
-    text-align: center;
+	.box-panel {
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+		border-radius: 20px;
+		margin-top: 25px;
+		background: white;
+		z-index: 9;
+		position: relative;
+		text-align: center;
 
-    @include medium {
-      padding: 28px 16px;
-      margin-top: -70px;
-    }
+		@include medium {
+			padding: 28px 16px;
+			margin-top: -70px;
+		}
 
-    &-item {
-      height: 100%;
-      padding: 24px;
+		&-item {
+			height: 100%;
+			padding: 24px;
 
-      &.right-left-bordered {
-        @include large {
-          border-right: 1px solid #c4c4c4;
-          border-left: 1px solid #c4c4c4;
-        }
-      }
+			&.right-left-bordered {
+				@include large {
+					border-right: 1px solid #c4c4c4;
+					border-left: 1px solid #c4c4c4;
+				}
+			}
 
-      &-heading {
-        font-size: 28px;
-      }
-    }
-  }
+			&-heading {
+				font-size: 28px;
+			}
+		}
+	}
 }
 
 #mikro {
-  position: relative;
-  .dots {
-    position: absolute;
-  }
+	position: relative;
+	.dots {
+		position: absolute;
+	}
 
-  .content {
-    margin-top: 90px;
+	.content {
+		margin-top: 90px;
 
-    .heading-section {
-      h2 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 30px;
-      }
-      hr {
-        width: 66px;
-        background-color: $primary-color;
-        height: 6px;
-        margin-bottom: 64px;
-      }
-    }
+		.heading-section {
+			h2 {
+				font-size: 24px;
+				font-weight: bold;
+				margin-bottom: 30px;
+			}
+			hr {
+				width: 66px;
+				background-color: $primary-color;
+				height: 6px;
+				margin-bottom: 64px;
+			}
+		}
 
-    .card-mikro {
-      .card-body {
-        span {
-          font-size: 18px;
-          margin: 48px 0 24px 0;
-        }
+		.card-mikro {
+			.card-body {
+				span {
+					font-size: 18px;
+					margin: 48px 0 24px 0;
+				}
 
-        p {
-          font-size: 14px;
-        }
-      }
-    }
-  }
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
 }
 
 #bni-bsl2 {
-  .heading-section-2 {
-    h2 {
-      margin-bottom: 30px;
-      font-size: 36px;
-    }
-  }
+	.heading-section-2 {
+		h2 {
+			margin-bottom: 30px;
+			font-size: 36px;
+		}
+	}
 
-  .content {
-    p {
-      font-size: 14px;
+	.content {
+		p {
+			font-size: 14px;
 
-      @include large {
-        max-width: 500px;
-      }
-    }
+			@include large {
+				max-width: 500px;
+			}
+		}
 
-    img {
-      width: 100%;
-      max-height: 312px;
-      object-fit: cover;
-      box-shadow: 19px 37px 0 0 #f5f7fe;
-    }
-  }
+		img {
+			width: 100%;
+			max-height: 312px;
+			object-fit: cover;
+			box-shadow: 19px 37px 0 0 #f5f7fe;
+		}
+	}
 }
 
 #digital-lounge {
-  position: relative;
-  .heading-section-2 {
-    h2 {
-      margin-bottom: 30px;
-      font-size: 36px;
-    }
-  }
+	position: relative;
+	.heading-section-2 {
+		h2 {
+			margin-bottom: 30px;
+			font-size: 36px;
+		}
+	}
 
-  .image-content {
-    position: relative;
+	.image-content {
+		position: relative;
 
-    .dots {
-      position: absolute;
-      top: 120px;
-      left: 160px;
-    }
-  }
+		.dots {
+			position: absolute;
+			top: 120px;
+			left: 160px;
+		}
+	}
 
-  .content {
-    p {
-      font-size: 14px;
-    }
-  }
+	.content {
+		p {
+			font-size: 14px;
+		}
+	}
 }
 
 #sinergy-bumn {
-  background-color: $primary-color;
-  position: relative;
-  z-index: 1;
-  margin-top: 150px;
-  @include large {
-    margin-top: 180px;
-  }
-  margin-bottom: 100px;
+	background-color: $primary-color;
+	position: relative;
+	z-index: 1;
+	margin-top: 150px;
+	@include large {
+		margin-top: 180px;
+	}
+	margin-bottom: 100px;
 
-  svg.top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
+	svg.top {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+	}
 
-  svg.bottom {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
+	svg.bottom {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+	}
 
-  .content {
-    position: relative;
-    z-index: 99;
-    padding-top: 160px;
-    padding-bottom: 150px;
-    @include medium {
-      padding-top: 270px;
-      padding-bottom: 150px;
-    }
+	.content {
+		position: relative;
+		z-index: 99;
+		padding-top: 160px;
+		padding-bottom: 150px;
+		@include medium {
+			padding-top: 270px;
+			padding-bottom: 150px;
+		}
 
-    overflow: hidden;
+		overflow: hidden;
 
-    .image-content {
-      width: 100%;
-      border-radius: 16px;
-      position: relative;
-      z-index: 1;
-      // display: flex;
-      padding: 30px;
+		.image-content {
+			width: 100%;
+			border-radius: 16px;
+			position: relative;
+			z-index: 1;
+			// display: flex;
+			padding: 30px;
 
-      &::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        bottom: 0;
-        left: 70px;
-        width: 100vh;
-        height: 100%;
-        align-items: center;
-        background-color: #e44d16;
-        border-radius: 16px;
-      }
+			&::before {
+				content: "";
+				position: absolute;
+				z-index: -1;
+				top: 0;
+				bottom: 0;
+				left: 70px;
+				width: 100vh;
+				height: 100%;
+				align-items: center;
+				background-color: #e44d16;
+				border-radius: 16px;
+			}
 
-      img {
-        width: 100%;
-        border-radius: 16px;
-      }
-    }
-  }
+			img {
+				width: 100%;
+				border-radius: 16px;
+			}
+		}
+	}
 }
 
 #ongoing {
-  .content {
-    position: relative;
-    margin-top: -70px;
-    .heading-section {
-      h2 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 30px;
-        line-height: 37px;
-      }
-      hr {
-        width: 66px;
-        background-color: $primary-color;
-        height: 6px;
-        margin-bottom: 64px;
-      }
-    }
+	.content {
+		position: relative;
+		margin-top: -70px;
+		.heading-section {
+			h2 {
+				font-size: 24px;
+				font-weight: bold;
+				margin-bottom: 30px;
+				line-height: 37px;
+			}
+			hr {
+				width: 66px;
+				background-color: $primary-color;
+				height: 6px;
+				margin-bottom: 64px;
+			}
+		}
 
-    .card-mikro {
-      .card-body {
-        span {
-          font-size: 18px;
-          margin: 48px 0 24px 0;
-        }
+		.card-mikro {
+			.card-body {
+				span {
+					font-size: 18px;
+					margin: 48px 0 24px 0;
+				}
 
-        p {
-          font-size: 14px;
-        }
-      }
-      .layered {
-        margin: 0 auto;
-        position: relative;
-        width: 100%;
-        max-width: 230px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+				p {
+					font-size: 14px;
+				}
+			}
+			.layered {
+				margin: 0 auto;
+				position: relative;
+				width: 100%;
+				max-width: 230px;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 
-        img {
-          width: 100%;
-          position: relative;
-          z-index: 9;
-        }
+				img {
+					width: 100%;
+					position: relative;
+					z-index: 9;
+				}
 
-        span {
-          align-items: stretch;
-          position: absolute;
-          font-weight: bold;
-          z-index: 10;
-          top: 60px;
-        }
-      }
-    }
+				span {
+					align-items: stretch;
+					position: absolute;
+					font-weight: bold;
+					z-index: 10;
+					top: 60px;
+				}
+			}
+		}
 
-    .dots {
-      position: absolute;
-      top: 0;
-      right: -60px;
-    }
+		.dots {
+			position: absolute;
+			top: 0;
+			right: -60px;
+		}
 
-    hr.dash {
-      display: none;
-      border-top: 2px dashed #c4c4c4;
-      position: absolute;
-      top: 300px;
-      width: 80%;
-      left: 10%;
+		hr.dash {
+			display: none;
+			border-top: 2px dashed #c4c4c4;
+			position: absolute;
+			top: 300px;
+			width: 80%;
+			left: 10%;
 
-      @include large {
-        display: block;
-      }
-    }
-  }
+			@include large {
+				display: block;
+			}
+		}
+	}
 }
